@@ -68,6 +68,14 @@ This repository contains:
 14. Unauthenticated Path Traversal via missing directory-boundary checks in `plugin-asset-map.php`.  
     https://github.com/getgrav/grav/security/advisories/GHSA-4v9q-p283-qc2m
 
+### PDFding
+
+15. Path Traversal / Arbitrary File Write via Malicious Object Keys in Backup Restore (`recover_data`)
+    https://github.com/mrmn2/PdfDing/security/advisories/GHSA-jjv3-jrv3-8r2g
+
+16. Broken Access Control (IDOR) - PDF Upload Lets Any User Write Into Another User's Collection
+    https://github.com/mrmn2/PdfDing/security/advisories/GHSA-q4p5-xx8j-5xwc
+
 </details>
 
 
