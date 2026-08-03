@@ -94,6 +94,11 @@ The following vulnerabilities have been responsibly reported to the respective m
 - **InvoicePlane** — Guest invoice/quote access keys and CRON authentication key are generated using a non-cryptographic PRNG.  
   https://github.com/InvoicePlane/InvoicePlane/security/advisories/GHSA-chqc-v432-8pj8
 
+- **notesnook** — Unvalidated releaseTrack input and missing confirmation allow renderer-controlled forced app relaunch and update-channel corruption
+  https://github.com/streetwriters/notesnook/security/advisories/GHSA-jmvr-c9wq-x6vx
+
+- **notesnook** — Session-wide permission request handler silently auto-grants nearly all sensitive permissions (camera, microphone, clipboard, notifications) with no user prompt
+  https://github.com/streetwriters/notesnook/security/advisories/GHSA-2w7p-6rr7-pqgv  
 </details>
 
 ## Responsible Disclosure
