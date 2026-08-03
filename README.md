@@ -11,7 +11,6 @@ This repository contains:
 
 ---
 
-<details>
 <summary><strong>🛡️ Assigned CVEs</strong></summary>
 
 *Coming soon.*
@@ -20,7 +19,7 @@ This repository contains:
 
 ---
 
-<details>
+
 <summary><strong>📄 Public Security Advisories (15)</strong></summary>
 
 ### SiYuan (11)
@@ -75,9 +74,7 @@ This repository contains:
 
 </details>
 
----
 
-<details>
 <summary><strong>⏳ Submitted Reports Under Review</strong></summary>
 
 The following vulnerabilities have been responsibly reported to the respective maintainers and are currently undergoing coordinated disclosure. These advisories are **not yet public** and are accessible only to repository maintainers and the reporter until publication.
@@ -99,15 +96,11 @@ The following vulnerabilities have been responsibly reported to the respective m
 
 </details>
 
----
-
 ## Responsible Disclosure
 
 I follow responsible disclosure practices and work directly with maintainers to ensure vulnerabilities are remediated before public disclosure.
 
 This repository contains **only publicly available advisories and CVEs**. Vulnerabilities that are still under review are listed only as high-level report titles until coordinated disclosure is complete.
-
----
 
 ### Statistics
 
