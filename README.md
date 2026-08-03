@@ -1,4 +1,4 @@
-Welcome to my public archive of security research and responsible disclosures
+Welcome to my public archive of security research and responsible disclosures,
 
 This repository contains:
 
@@ -9,15 +9,11 @@ This repository contains:
 > [!NOTE]
 > Reports under coordinated disclosure are **not** published until the vendor has released a fix or the advisory has been made public. Technical details and proof-of-concepts are intentionally withheld until the disclosure process is complete.
 
----
-
 <summary><strong>🛡️ Assigned CVEs</strong></summary>
 
 *Coming soon.*
 
 </details>
-
----
 
 
 <summary><strong>📄 Public Security Advisories (15)</strong></summary>
