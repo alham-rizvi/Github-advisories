@@ -1,12 +1,10 @@
-# Security Research Portfolio
-
-Welcome to my public archive of security research and responsible disclosures.
+Welcome to my public archive of security research and responsible disclosures
 
 This repository contains:
 
-- 🛡️ Assigned CVEs
-- 📄 Public Security Advisories
-- ⏳ Reports Under Review
+- Assigned CVEs
+- Public Security Advisories
+- Reports Under Review
 
 > [!NOTE]
 > Reports under coordinated disclosure are **not** published until the vendor has released a fix or the advisory has been made public. Technical details and proof-of-concepts are intentionally withheld until the disclosure process is complete.
@@ -103,7 +101,7 @@ The following vulnerabilities have been responsibly reported to the respective m
 
 ---
 
-## 🤝 Responsible Disclosure
+## Responsible Disclosure
 
 I follow responsible disclosure practices and work directly with maintainers to ensure vulnerabilities are remediated before public disclosure.
 
