@@ -20,7 +20,7 @@ jobs:
       - name: Configure git
         run: |
           git config user.name "alham-rizvi"
-          git config user.email "alham.rizvi@example.com"
+          git config user.email "alham-rizvi@users.noreply.github.com"
 
       - name: Configure remote auth
         env:
