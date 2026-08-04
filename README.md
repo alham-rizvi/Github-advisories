@@ -115,8 +115,18 @@ The following vulnerabilities have been responsibly reported to the respective m
   https://github.com/streetwriters/notesnook/security/advisories/GHSA-jmvr-c9wq-x6vx
 
 - **notesnook** — Session-wide permission request handler silently auto-grants nearly all sensitive permissions (camera, microphone, clipboard, notifications) with no user prompt
-  https://github.com/streetwriters/notesnook/security/advisories/GHSA-2w7p-6rr7-pqgv  
+  https://github.com/streetwriters/notesnook/security/advisories/GHSA-2w7p-6rr7-pqgv
+
+
+-**gravCMS** - config_denied_paths default list omits `system`, exposing real secrets (e.g. system.cache.redis.password) via the Twig sandbox when config_access is enabled
+  https://github.com/getgrav/grav/security/advisories/GHSA-xjw5-q542-3vmr
+
+-**gravCMS** - UserInterface offsetget/offsetexists allow-listed in Twig sandbox let editor-authored content leak hashed_password and 2FA secrets via offsetGet()
+   https://github.com/getgrav/grav/security/advisories/GHSA-3jhr-mxmx-38cx
+
+
 </details>
+
 
 ## Responsible Disclosure
 
