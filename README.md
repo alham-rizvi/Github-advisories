@@ -99,12 +99,6 @@ The following vulnerabilities have been responsibly reported to the respective m
 - **BentoPDF** — SSRF in `cors-proxy-worker.js` via DNS-based hostname allowlist bypass.  
   https://github.com/alam00000/bentopdf/security/advisories/GHSA-5xjf-rr5x-pcfj
 
-- **Notesnook** — Unvalidated `releaseTrack` input allows renderer-controlled forced application relaunch and update-channel corruption.  
-  https://github.com/streetwriters/notesnook/security/advisories/GHSA-jmvr-c9wq-x6vx
-
-- **Notesnook** — Session-wide permission request handler silently auto-grants nearly all sensitive permissions (camera, microphone, clipboard, notifications) without user interaction.  
-  https://github.com/streetwriters/notesnook/security/advisories/GHSA-2w7p-6rr7-pqgv
-
 - **InvoicePlane** — Password reset token uses a non-constant-time comparison instead of `hash_equals()`.  
   https://github.com/InvoicePlane/InvoicePlane/security/advisories/GHSA-wcqc-qqv5-65ph
 
