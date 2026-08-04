@@ -18,7 +18,7 @@ This repository contains:
 
 <summary><strong>📄 Public Security Advisories (15)</strong></summary>
 
-### SiYuan (11)
+### SiYuan (12)
 
 1. HTTP Basic Auth path in `CheckAuth()` bypasses the workspace access-code CAPTCHA/lockout, allowing unthrottled remote brute-force of the admin credential.  
    https://github.com/siyuan-note/siyuan/security/advisories/GHSA-w3xh-mmmh-r54v
@@ -50,30 +50,37 @@ This repository contains:
 10. Path Traversal in MCP `database_clean` resulting in arbitrary file read and deletion.  
     https://github.com/siyuan-note/siyuan/security/advisories/GHSA-43jx-gxq4-jpjc
 
+11. 17 block metadata/content endpoints in kernel/api/block.go (getRefText, getBlockBreadcrumb, checkBlockExist, and 14 others) have zero publish-access filtering, reachable by anonymous publish-mode readers
+    https://github.com/siyuan-note/siyuan/security/advisories/GHSA-4vpg-gwqq-w44c#event-896806
+
+12. Six publish-mode reader-facing endpoints filter results using the "invisible" list instead of the "disabled" (forbidden) list, leaking content from notebooks/documents an admin explicitly disabled from publishing (update: eight endpoints confirmed, see body)
+    https://github.com/siyuan-note/siyuan/security/advisories/GHSA-48p5-pffc-5r9p#event-896511
+
 ### FileRise (2)
 
-11. Trailing-dot filename bypasses `UploadNamePolicy` strict-mode extension restrictions.  
+13. Trailing-dot filename bypasses `UploadNamePolicy` strict-mode extension restrictions.  
     https://github.com/error311/FileRise/security/advisories/GHSA-8vmq-qjrm-m5f2
 
-12. OnlyOffice callback silently skips JWT verification when the token is omitted.  
+14. OnlyOffice callback silently skips JWT verification when the token is omitted.  
     https://github.com/error311/FileRise/security/advisories/GHSA-wg9q-3w29-xv5q
+    
 
 ### REDAXO (1)
 
-13. Mediapool: Unsanitized SVG uploads are publicly reachable, enabling Stored XSS.  
+15. Mediapool: Unsanitized SVG uploads are publicly reachable, enabling Stored XSS.  
     https://github.com/redaxo/core/security/advisories/GHSA-2p3g-jr7p-qwwx
 
 ### Grav CMS (1)
 
-14. Unauthenticated Path Traversal via missing directory-boundary checks in `plugin-asset-map.php`.  
+16. Unauthenticated Path Traversal via missing directory-boundary checks in `plugin-asset-map.php`.  
     https://github.com/getgrav/grav/security/advisories/GHSA-4v9q-p283-qc2m
 
 ### PDFding
 
-15. Path Traversal / Arbitrary File Write via Malicious Object Keys in Backup Restore (`recover_data`)
+17. Path Traversal / Arbitrary File Write via Malicious Object Keys in Backup Restore (`recover_data`)
     https://github.com/mrmn2/PdfDing/security/advisories/GHSA-jjv3-jrv3-8r2g
 
-16. Broken Access Control (IDOR) - PDF Upload Lets Any User Write Into Another User's Collection
+18. Broken Access Control (IDOR) - PDF Upload Lets Any User Write Into Another User's Collection
     https://github.com/mrmn2/PdfDing/security/advisories/GHSA-q4p5-xx8j-5xwc
 
 </details>
