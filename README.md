@@ -56,31 +56,37 @@ This repository contains:
 12. Six publish-mode reader-facing endpoints filter results using the "invisible" list instead of the "disabled" (forbidden) list, leaking content from notebooks/documents an admin explicitly disabled from publishing (update: eight endpoints confirmed, see body)
     https://github.com/siyuan-note/siyuan/security/advisories/GHSA-48p5-pffc-5r9p#event-896511
 
+13. Attribute-breakout XSS-to-RCE via unescaped document bookmark/alias/memo/name fields in the "move/link to" file-tree picker's tooltip (app/src/util/pathName.ts), triggered by hovering
+    https://github.com/siyuan-note/siyuan/security/advisories/GHSA-jjq3-3942-x99r#event-898885
+
+14.XSS-to-RCE via malicious filename in the upload/drag-drop validation flow (app/src/protyle/upload/index.ts), reflected unescaped into showMessage's insertAdjacentHTML sink
+   https://github.com/siyuan-note/siyuan/security/advisories/GHSA-jf56-jrhq-j2qp#event-898039
+
 ### FileRise (2)
 
-13. Trailing-dot filename bypasses `UploadNamePolicy` strict-mode extension restrictions.  
+15. Trailing-dot filename bypasses `UploadNamePolicy` strict-mode extension restrictions.  
     https://github.com/error311/FileRise/security/advisories/GHSA-8vmq-qjrm-m5f2
 
-14. OnlyOffice callback silently skips JWT verification when the token is omitted.  
+16. OnlyOffice callback silently skips JWT verification when the token is omitted.  
     https://github.com/error311/FileRise/security/advisories/GHSA-wg9q-3w29-xv5q
     
 
 ### REDAXO (1)
 
-15. Mediapool: Unsanitized SVG uploads are publicly reachable, enabling Stored XSS.  
+17. Mediapool: Unsanitized SVG uploads are publicly reachable, enabling Stored XSS.  
     https://github.com/redaxo/core/security/advisories/GHSA-2p3g-jr7p-qwwx
 
 ### Grav CMS (1)
 
-16. Unauthenticated Path Traversal via missing directory-boundary checks in `plugin-asset-map.php`.  
+18. Unauthenticated Path Traversal via missing directory-boundary checks in `plugin-asset-map.php`.  
     https://github.com/getgrav/grav/security/advisories/GHSA-4v9q-p283-qc2m
 
 ### PDFding
 
-17. Path Traversal / Arbitrary File Write via Malicious Object Keys in Backup Restore (`recover_data`)
+19. Path Traversal / Arbitrary File Write via Malicious Object Keys in Backup Restore (`recover_data`)
     https://github.com/mrmn2/PdfDing/security/advisories/GHSA-jjv3-jrv3-8r2g
 
-18. Broken Access Control (IDOR) - PDF Upload Lets Any User Write Into Another User's Collection
+20. Broken Access Control (IDOR) - PDF Upload Lets Any User Write Into Another User's Collection
     https://github.com/mrmn2/PdfDing/security/advisories/GHSA-q4p5-xx8j-5xwc
 
 </details>
