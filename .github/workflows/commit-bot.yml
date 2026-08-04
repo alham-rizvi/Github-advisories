@@ -1,6 +1,9 @@
 name: Daily Commit Logger
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     - cron: '30 18 * * *'
   workflow_dispatch:
@@ -10,6 +13,7 @@ permissions:
 
 jobs:
   log-commit:
+    if: github.event_name != 'push' || github.event.head_commit.message != 'chore: update daily commit log'
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
