@@ -1,0 +1,35 @@
+name: Commit Bot
+
+on:
+  schedule:
+    - cron: '0 22 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Create scheduled commit
+        run: |
+          mkdir -p .commit-bot
+          echo "Commit: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> .commit-bot/heartbeat.txt
+          git add .commit-bot/heartbeat.txt
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "chore: scheduled bot heartbeat"
+          git push origin HEAD:${GITHUB_REF_NAME}
