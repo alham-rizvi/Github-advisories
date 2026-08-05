@@ -126,6 +126,17 @@ The following vulnerabilities have been responsibly reported to the respective m
 - **gravCMS** - Non constant time nonce comparison in Utils::verifyNonce() used for CSRF protection
    https://github.com/getgrav/grav/security/advisories/GHSA-38p6-h87p-r4cg
 
+- **gravCMS** - Password reset and activation tokens compared with non-constant-time === instead of hash_equals(), and reset-submission endpoint has no rate limiting
+   https://github.com/getgrav/grav/security/advisories/GHSA-x239-6jqx-5hjh
+
+- **gravCMS** - User registration discloses whether an email address is already registered (email enumeration)
+   https://github.com/getgrav/grav/security/advisories/GHSA-crh8-xm27-j9g9
+
+- **gravCMS** - The system, site, and theme Twig variables bypass the content sandbox entirely and are never covered by config_denied_paths
+   https://github.com/getgrav/grav/security/advisories/GHSA-p597-crqc-m349
+
+  
+
 </details>
 
 
