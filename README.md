@@ -138,7 +138,30 @@ The following vulnerabilities have been responsibly reported to the respective m
 - **gravCMS** - The system, site, and theme Twig variables bypass the content sandbox entirely and are never covered by config_denied_paths
    https://github.com/getgrav/grav/security/advisories/GHSA-p597-crqc-m349
 
-  
+- **note-mark** -  Token exchange grant (RFC 8693) authenticates the caller based solely on whether their supplied subject_token is accepted by the OIDC provider's userinfo endpoint, with no check that the token was actually issued for note-mark itself, allowing an access token obtained through any other client of the same identity provider to authenticate as that user here
+    https://github.com/enchant97/note-mark/security/advisories/GHSA-3j7j-3hq5-h3rp#event-910592
+
+- **gravCMS** - onApiUserListRowAction "unlock" handler does not check the target account's privilege level, letting an api.users.write account clear an admin.super account's lockout
+  https://github.com/getgrav/grav/security/advisories/GHSA-985r-mpj8-5rqw#event-910316
+
+- **gravCMS** - media_directory() Twig function allows filesystem path traversal and file content disclosure from sandboxed page content
+  https://github.com/getgrav/grav/security/advisories/GHSA-47ch-6w46-6xm7
+
+- **gravCMS** - sendInvitationEmail() is missing the untrusted-Host-header protection the other three security-sensitive email links have, and require_trusted_host only enforces one of four flows
+  https://github.com/getgrav/grav/security/advisories/GHSA-69vf-mjxw-x79j
+
+- **gravCMS** - Scheduler\Job::createLockFile() follows symlinks in the world-writable system temp directory (local symlink attack) [INFORMATIONAL]
+  https://github.com/getgrav/grav/security/advisories/GHSA-q8w8-6cq5-j4h2
+
+- **gravCMS** - [flex-objects] shortcode bypasses Flex directory ACL entirely, exposing any registered collection to anyone with page-edit access
+ https://github.com/getgrav/grav/security/advisories/GHSA-x929-528m-vx2m#event-910540
+
+- **gravCMS** - Webhook delivery re-resolves the target hostname after validating it, allowing the SSRF guard to be bypassed by DNS rebinding
+ https://github.com/getgrav/grav/security/advisories/GHSA-hq2v-cgw4-fw2w#event-910555
+
+
+
+
 
 </details>
 
