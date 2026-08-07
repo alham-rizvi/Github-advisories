@@ -16,9 +16,9 @@ This repository contains:
 </details>
 
 
-<summary><strong>📄 Public Security Advisories (15)</strong></summary>
+<summary><strong>📄 Public Security Advisories (22)</strong></summary>
 
-### SiYuan (12)
+### SiYuan (16)
 
 1. HTTP Basic Auth path in `CheckAuth()` bypasses the workspace access-code CAPTCHA/lockout, allowing unthrottled remote brute-force of the admin credential.  
    https://github.com/siyuan-note/siyuan/security/advisories/GHSA-w3xh-mmmh-r54v
@@ -70,29 +70,29 @@ This repository contains:
 
 ### FileRise (2)
 
-16. Trailing-dot filename bypasses `UploadNamePolicy` strict-mode extension restrictions.  
+17. Trailing-dot filename bypasses `UploadNamePolicy` strict-mode extension restrictions.  
     https://github.com/error311/FileRise/security/advisories/GHSA-8vmq-qjrm-m5f2
 
-17. OnlyOffice callback silently skips JWT verification when the token is omitted.  
+18. OnlyOffice callback silently skips JWT verification when the token is omitted.  
     https://github.com/error311/FileRise/security/advisories/GHSA-wg9q-3w29-xv5q
     
 
 ### REDAXO (1)
 
-18. Mediapool: Unsanitized SVG uploads are publicly reachable, enabling Stored XSS.  
+19. Mediapool: Unsanitized SVG uploads are publicly reachable, enabling Stored XSS.  
     https://github.com/redaxo/core/security/advisories/GHSA-2p3g-jr7p-qwwx
 
 ### Grav CMS (1)
 
-19. Unauthenticated Path Traversal via missing directory-boundary checks in `plugin-asset-map.php`.  
+20. Unauthenticated Path Traversal via missing directory-boundary checks in `plugin-asset-map.php`.  
     https://github.com/getgrav/grav/security/advisories/GHSA-4v9q-p283-qc2m
 
-### PDFding
+### PDFding (2)
 
-20. Path Traversal / Arbitrary File Write via Malicious Object Keys in Backup Restore (`recover_data`)
+21. Path Traversal / Arbitrary File Write via Malicious Object Keys in Backup Restore (`recover_data`)
     https://github.com/mrmn2/PdfDing/security/advisories/GHSA-jjv3-jrv3-8r2g
 
-21. Broken Access Control (IDOR) - PDF Upload Lets Any User Write Into Another User's Collection
+22. Broken Access Control (IDOR) - PDF Upload Lets Any User Write Into Another User's Collection
     https://github.com/mrmn2/PdfDing/security/advisories/GHSA-q4p5-xx8j-5xwc
 
 </details>
@@ -159,10 +159,6 @@ The following vulnerabilities have been responsibly reported to the respective m
 - **gravCMS** - Webhook delivery re-resolves the target hostname after validating it, allowing the SSRF guard to be bypassed by DNS rebinding
  https://github.com/getgrav/grav/security/advisories/GHSA-hq2v-cgw4-fw2w#event-910555
 
-
-
-
-
 </details>
 
 
@@ -174,8 +170,8 @@ This repository contains **only publicly available advisories and CVEs**. Vulner
 
 ### Statistics
 
-- **Public Advisories:** 15
+- **Public Advisories:** 22
 - **Assigned CVEs:** Updating soon
-- **Reports Under Review:** 5
+- **Reports Under Review:** 19
 
 _Last updated: August 2026_
