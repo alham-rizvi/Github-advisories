@@ -63,7 +63,10 @@ This repository contains:
    https://github.com/siyuan-note/siyuan/security/advisories/GHSA-jf56-jrhq-j2qp#event-898039
 
 15. Zero-click XSS-to-RCE via unescaped block name/alias/memo in the "((" block-reference autocomplete hint popup (app/src/protyle/hint/extend.ts), fires on render with no user interaction beyond typing a reference
-   https://github.com/fleetdm/fleet/security/advisories/GHSA-8rr8-84pc-6rpp   
+   https://github.com/fleetdm/fleet/security/advisories/GHSA-8rr8-84pc-6rpp
+
+16. Path Traversal via unvalidated packageName across all 10 Bazaar install/uninstall endpoints, enabling arbitrary-location file write (install) and arbitrary recursive directory deletion (uninstall)
+    https://github.com/siyuan-note/siyuan/security/advisories/GHSA-wr4w-7vjm-mmx3#event-908957
 
 ### FileRise (2)
 
