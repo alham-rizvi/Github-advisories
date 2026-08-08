@@ -1,0 +1,18 @@
+Open source peak repos:
+
+SiYuan
+gravCMS
+notes-nook
+outline
+redaxo
+PDFding
+bentoopdf
+filerise
+filebrowser
+elfinder
+note mark
+logseq
+anytype 
+concreteCMS
+fleet
+undici
