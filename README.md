@@ -66,10 +66,14 @@ This repository contains:
    https://github.com/fleetdm/fleet/security/advisories/GHSA-8rr8-84pc-6rpp
 
 16. Path Traversal via unvalidated packageName across all 10 Bazaar install/uninstall endpoints, enabling arbitrary-location file write (install) and arbitrary recursive directory deletion (uninstall)
-    https://github.com/siyuan-note/siyuan/security/advisories/GHSA-wr4w-7vjm-mmx3#event-908957
+    https://github.com/siyuan-note/siyuan/security/advisories/GHSA-wr4w-7vjm-mmx3
 
 17. Unrestricted arbitrary file/directory deletion via /api/search/removeTemplate: the client-supplied "path" parameter is passed directly to os.RemoveAll with no validation and no base-directory restriction
-   https://github.com/siyuan-note/siyuan/security/advisories/GHSA-w938-w7m4-qrj8#event-911823
+   https://github.com/siyuan-note/siyuan/security/advisories/GHSA-w938-w7m4-qrj8
+
+18. Missing consistency check between packageName and repoURL/repoHash in bazaar package install allows overwriting an existing, trusted plugin
+    https://github.com/siyuan-note/siyuan/security/advisories/GHSA-rpx2-p6hp-x5gj
+   
 
 ### FileRise (2)
 
@@ -162,6 +166,9 @@ The following vulnerabilities have been responsibly reported to the respective m
 - **gravCMS** - Webhook delivery re-resolves the target hostname after validating it, allowing the SSRF guard to be bypassed by DNS rebinding
  https://github.com/getgrav/grav/security/advisories/GHSA-hq2v-cgw4-fw2w#event-910555
 
+- **Outline** -  Per-IP Share-Subscription Creation Limit Can Be Bypassed Indefinitely via the Stale-Unconfirmed Resend Path
+  https://github.com/outline/outline/security/advisories/GHSA-px83-2m6m-7frj
+  
 </details>
 
 
