@@ -73,6 +73,12 @@ This repository contains:
 
 18. Missing consistency check between packageName and repoURL/repoHash in bazaar package install allows overwriting an existing, trusted plugin
     https://github.com/siyuan-note/siyuan/security/advisories/GHSA-rpx2-p6hp-x5gj
+
+19. Secret placeholders in the http_request MCP tool are interpolated into the destination URL, enabling exfiltration of stored secrets to any attacker-chosen host
+    https://github.com/siyuan-note/siyuan/security/advisories/GHSA-853m-gvvm-6rvx
+
+20. MCP file tool's blocklist is incomplete relative to the HTTP file API it claims to align with, exposing publish-mode passwords and other sensitive workspace files
+    https://github.com/siyuan-note/siyuan/security/advisories/GHSA-c8r8-95hg-mp34
    
 
 ### FileRise (2)
