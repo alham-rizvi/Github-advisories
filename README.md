@@ -80,6 +80,9 @@ This repository contains:
 20. MCP file tool's blocklist is incomplete relative to the HTTP file API it claims to align with, exposing publish-mode passwords and other sensitive workspace files
     https://github.com/siyuan-note/siyuan/security/advisories/GHSA-c8r8-95hg-mp34
 
+21. Unescaped URL concatenation into evaluateJavaScript allows JavaScript injection via the `siyuan://` custom URL scheme
+    https://github.com/siyuan-note/siyuan/security/advisories/GHSA-7ffh-xpqv-mh58
+
 ### FileRise (2)
 
 21. Trailing-dot filename bypasses `UploadNamePolicy` strict-mode extension restrictions.  
