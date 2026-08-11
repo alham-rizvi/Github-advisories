@@ -140,6 +140,15 @@ This repository contains:
 - **gravCMS** - The system, site, and theme Twig variables bypass the content sandbox entirely and are never covered by config_denied_paths
    https://github.com/getgrav/grav/security/advisories/GHSA-p597-crqc-m349
 
+### note-mark 
+
+- **note-mark** -  Token exchange grant (RFC 8693) authenticates the caller based solely on whether their supplied subject_token is accepted by the OIDC provider's userinfo endpoint, with no check that the token was actually issued for note-mark itself, allowing an access token obtained through any other client of the same identity provider to authenticate as that user here
+    https://github.com/enchant97/note-mark/security/advisories/GHSA-3j7j-3hq5-h3rp#event-910592
+
+- **note-mark** - No audience check during RFC 8693 token exchange
+    https://github.com/enchant97/note-mark/security/advisories/GHSA-3j7j-3hq5-h3rp#event-917323
+
+
 ### PDFding (2)
 
 25. Path Traversal / Arbitrary File Write via Malicious Object Keys in Backup Restore (`recover_data`)
@@ -169,9 +178,6 @@ The following vulnerabilities have been responsibly reported to the respective m
 
 - **notesnook** — Session-wide permission request handler silently auto-grants nearly all sensitive permissions (camera, microphone, clipboard, notifications) with no user prompt
   https://github.com/streetwriters/notesnook/security/advisories/GHSA-2w7p-6rr7-pqgv
-
-- **note-mark** -  Token exchange grant (RFC 8693) authenticates the caller based solely on whether their supplied subject_token is accepted by the OIDC provider's userinfo endpoint, with no check that the token was actually issued for note-mark itself, allowing an access token obtained through any other client of the same identity provider to authenticate as that user here
-    https://github.com/enchant97/note-mark/security/advisories/GHSA-3j7j-3hq5-h3rp#event-910592
 
 - **Outline** -  Per-IP Share-Subscription Creation Limit Can Be Bypassed Indefinitely via the Stale-Unconfirmed Resend Path
   https://github.com/outline/outline/security/advisories/GHSA-px83-2m6m-7frj
