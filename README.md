@@ -101,6 +101,45 @@ This repository contains:
 24. Unauthenticated Path Traversal via missing directory-boundary checks in `plugin-asset-map.php`.  
     https://github.com/getgrav/grav/security/advisories/GHSA-4v9q-p283-qc2m
 
+- **gravCMS** - onApiUserListRowAction "unlock" handler does not check the target account's privilege level, letting an api.users.write account clear an admin.super account's lockout
+  https://github.com/getgrav/grav/security/advisories/GHSA-985r-mpj8-5rqw#event-910316
+
+- **gravCMS** - media_directory() Twig function allows filesystem path traversal and file content disclosure from sandboxed page content
+  https://github.com/getgrav/grav/security/advisories/GHSA-47ch-6w46-6xm7
+
+- **gravCMS** - sendInvitationEmail() is missing the untrusted-Host-header protection the other three security-sensitive email links have, and require_trusted_host only enforces one of four flows
+  https://github.com/getgrav/grav/security/advisories/GHSA-69vf-mjxw-x79j
+
+- **gravCMS** - Scheduler\Job::createLockFile() follows symlinks in the world-writable system temp directory (local symlink attack) [INFORMATIONAL]
+  https://github.com/getgrav/grav/security/advisories/GHSA-q8w8-6cq5-j4h2
+
+- **gravCMS** - [flex-objects] shortcode bypasses Flex directory ACL entirely, exposing any registered collection to anyone with page-edit access
+ https://github.com/getgrav/grav/security/advisories/GHSA-x929-528m-vx2m#event-910540
+
+- **gravCMS** - Webhook delivery re-resolves the target hostname after validating it, allowing the SSRF guard to be bypassed by DNS rebinding
+ https://github.com/getgrav/grav/security/advisories/GHSA-hq2v-cgw4-fw2w#event-910555
+
+- **gravCMS** - config_denied_paths default list omits `system`, exposing real secrets (e.g. system.cache.redis.password) via the Twig sandbox when config_access is enabled
+  https://github.com/getgrav/grav/security/advisories/GHSA-xjw5-q542-3vmr
+
+- **gravCMS** - UserInterface offsetget/offsetexists allow-listed in Twig sandbox let editor-authored content leak hashed_password and 2FA secrets via offsetGet()
+   https://github.com/getgrav/grav/security/advisories/GHSA-3jhr-mxmx-38cx
+
+- **gravCMS** - Origin validation bypass in Uri::referrer() and Pages::referrerRoute() via unanchored prefix match
+   https://github.com/getgrav/grav/security/advisories/GHSA-9ccq-2jfg-qw33
+
+- **gravCMS** - Non constant time nonce comparison in Utils::verifyNonce() used for CSRF protection
+   https://github.com/getgrav/grav/security/advisories/GHSA-38p6-h87p-r4cg
+
+- **gravCMS** - Password reset and activation tokens compared with non-constant-time === instead of hash_equals(), and reset-submission endpoint has no rate limiting
+   https://github.com/getgrav/grav/security/advisories/GHSA-x239-6jqx-5hjh
+
+- **gravCMS** - User registration discloses whether an email address is already registered (email enumeration)
+   https://github.com/getgrav/grav/security/advisories/GHSA-crh8-xm27-j9g9
+
+- **gravCMS** - The system, site, and theme Twig variables bypass the content sandbox entirely and are never covered by config_denied_paths
+   https://github.com/getgrav/grav/security/advisories/GHSA-p597-crqc-m349
+
 ### PDFding (2)
 
 25. Path Traversal / Arbitrary File Write via Malicious Object Keys in Backup Restore (`recover_data`)
@@ -131,51 +170,20 @@ The following vulnerabilities have been responsibly reported to the respective m
 - **notesnook** — Session-wide permission request handler silently auto-grants nearly all sensitive permissions (camera, microphone, clipboard, notifications) with no user prompt
   https://github.com/streetwriters/notesnook/security/advisories/GHSA-2w7p-6rr7-pqgv
 
-- **gravCMS** - config_denied_paths default list omits `system`, exposing real secrets (e.g. system.cache.redis.password) via the Twig sandbox when config_access is enabled
-  https://github.com/getgrav/grav/security/advisories/GHSA-xjw5-q542-3vmr
-
-- **gravCMS** - UserInterface offsetget/offsetexists allow-listed in Twig sandbox let editor-authored content leak hashed_password and 2FA secrets via offsetGet()
-   https://github.com/getgrav/grav/security/advisories/GHSA-3jhr-mxmx-38cx
-
-- **gravCMS** - Origin validation bypass in Uri::referrer() and Pages::referrerRoute() via unanchored prefix match
-   https://github.com/getgrav/grav/security/advisories/GHSA-9ccq-2jfg-qw33
-
-- **gravCMS** - Non constant time nonce comparison in Utils::verifyNonce() used for CSRF protection
-   https://github.com/getgrav/grav/security/advisories/GHSA-38p6-h87p-r4cg
-
-- **gravCMS** - Password reset and activation tokens compared with non-constant-time === instead of hash_equals(), and reset-submission endpoint has no rate limiting
-   https://github.com/getgrav/grav/security/advisories/GHSA-x239-6jqx-5hjh
-
-- **gravCMS** - User registration discloses whether an email address is already registered (email enumeration)
-   https://github.com/getgrav/grav/security/advisories/GHSA-crh8-xm27-j9g9
-
-- **gravCMS** - The system, site, and theme Twig variables bypass the content sandbox entirely and are never covered by config_denied_paths
-   https://github.com/getgrav/grav/security/advisories/GHSA-p597-crqc-m349
-
 - **note-mark** -  Token exchange grant (RFC 8693) authenticates the caller based solely on whether their supplied subject_token is accepted by the OIDC provider's userinfo endpoint, with no check that the token was actually issued for note-mark itself, allowing an access token obtained through any other client of the same identity provider to authenticate as that user here
     https://github.com/enchant97/note-mark/security/advisories/GHSA-3j7j-3hq5-h3rp#event-910592
-
-- **gravCMS** - onApiUserListRowAction "unlock" handler does not check the target account's privilege level, letting an api.users.write account clear an admin.super account's lockout
-  https://github.com/getgrav/grav/security/advisories/GHSA-985r-mpj8-5rqw#event-910316
-
-- **gravCMS** - media_directory() Twig function allows filesystem path traversal and file content disclosure from sandboxed page content
-  https://github.com/getgrav/grav/security/advisories/GHSA-47ch-6w46-6xm7
-
-- **gravCMS** - sendInvitationEmail() is missing the untrusted-Host-header protection the other three security-sensitive email links have, and require_trusted_host only enforces one of four flows
-  https://github.com/getgrav/grav/security/advisories/GHSA-69vf-mjxw-x79j
-
-- **gravCMS** - Scheduler\Job::createLockFile() follows symlinks in the world-writable system temp directory (local symlink attack) [INFORMATIONAL]
-  https://github.com/getgrav/grav/security/advisories/GHSA-q8w8-6cq5-j4h2
-
-- **gravCMS** - [flex-objects] shortcode bypasses Flex directory ACL entirely, exposing any registered collection to anyone with page-edit access
- https://github.com/getgrav/grav/security/advisories/GHSA-x929-528m-vx2m#event-910540
-
-- **gravCMS** - Webhook delivery re-resolves the target hostname after validating it, allowing the SSRF guard to be bypassed by DNS rebinding
- https://github.com/getgrav/grav/security/advisories/GHSA-hq2v-cgw4-fw2w#event-910555
 
 - **Outline** -  Per-IP Share-Subscription Creation Limit Can Be Bypassed Indefinitely via the Stale-Unconfirmed Resend Path
   https://github.com/outline/outline/security/advisories/GHSA-px83-2m6m-7frj
 
+- **gravCMS** - Unescaped [lorem] and [details] shortcode parameters allow stored XSS in Shortcode Core
+  https://github.com/getgrav/grav/security/advisories/GHSA-hvm8-wx3f-j774
+
+ - **gravCMS** - Stored XSS via username/display name: tHtml() interpolates untrusted values into a template before markdown-parsing it, and usernames are not restricted against HTML metacharacters
+   https://github.com/getgrav/grav/security/advisories/GHSA-96xm-c5hr-59rx
+
+- **gravCMS** - Unsanitized marked.js output injected via {@html} in MarkdownEditor and MarkdownModal, javascript: URI XSS, one path reachable via third-party plugin/theme changelogs with no site access required
+  https://github.com/getgrav/grav/security/advisories/GHSA-752r-88j4-vxm3
 </details>
 
 
