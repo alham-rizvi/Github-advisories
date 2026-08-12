@@ -86,6 +86,12 @@ This repository contains:
 21. Unescaped URL concatenation into `evaluateJavaScript` allows JavaScript injection via the `siyuan://` custom URL scheme.  
     https://github.com/siyuan-note/siyuan/security/advisories/GHSA-7ffh-xpqv-mh58
 
+22. Scoped API key can act on super-admin accounts across seven user-management endpoints
+    https://github.com/getgrav/grav/security/advisories/GHSA-94q7-vrqr-cx5v
+
+23. Scoped API key can edit page permissions outside the scope it was granted
+    https://github.com/getgrav/grav/security/advisories/GHSA-mcx6-4rvg-7r8v
+
 
 
 ### FileRise (2)
@@ -148,6 +154,7 @@ This repository contains:
 
 38. The `system`, `site`, and `theme` Twig variables bypass the content sandbox entirely and are never covered by `config_denied_paths`.  
     https://github.com/getgrav/grav/security/advisories/GHSA-p597-crqc-m349
+    
 
 
 
@@ -201,6 +208,9 @@ The following vulnerabilities have been responsibly reported to the respective m
 
 - **gravCMS** — Unsanitized `marked.js` output injected via `{@html}` in MarkdownEditor and MarkdownModal, `javascript:` URI XSS, one path reachable via third‑party plugin/theme changelogs with no site access required.  
   https://github.com/getgrav/grav/security/advisories/GHSA-752r-88j4-vxm3
+
+- **fleet** - Enabling "Allow IdP-initiated SSO login" globally disables SAML InResponseTo replay protection for all logins, not just IdP-initiated ones
+  https://github.com/fleetdm/fleet/security/advisories/GHSA-8rr8-84pc-6rpp#advisory-comment-271185
 
 
 
