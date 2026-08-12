@@ -86,12 +86,6 @@ This repository contains:
 21. Unescaped URL concatenation into `evaluateJavaScript` allows JavaScript injection via the `siyuan://` custom URL scheme.  
     https://github.com/siyuan-note/siyuan/security/advisories/GHSA-7ffh-xpqv-mh58
 
-22. Scoped API key can act on super-admin accounts across seven user-management endpoints
-    https://github.com/getgrav/grav/security/advisories/GHSA-94q7-vrqr-cx5v
-
-23. Scoped API key can edit page permissions outside the scope it was granted
-    https://github.com/getgrav/grav/security/advisories/GHSA-mcx6-4rvg-7r8v
-
 
 
 ### FileRise (2)
@@ -154,7 +148,12 @@ This repository contains:
 
 38. The `system`, `site`, and `theme` Twig variables bypass the content sandbox entirely and are never covered by `config_denied_paths`.  
     https://github.com/getgrav/grav/security/advisories/GHSA-p597-crqc-m349
-    
+
+22. Scoped API key can act on super-admin accounts across seven user-management endpoints
+    https://github.com/getgrav/grav/security/advisories/GHSA-94q7-vrqr-cx5v
+
+23. Scoped API key can edit page permissions outside the scope it was granted
+    https://github.com/getgrav/grav/security/advisories/GHSA-mcx6-4rvg-7r8v
 
 
 
@@ -170,10 +169,10 @@ This repository contains:
 
 ### PDFding (2)
 
-41. Path Traversal / Arbitrary File Write via Malicious Object Keys in Backup Restore (`recover_data`).  
+43. Path Traversal / Arbitrary File Write via Malicious Object Keys in Backup Restore (`recover_data`).  
     https://github.com/mrmn2/PdfDing/security/advisories/GHSA-jjv3-jrv3-8r2g
 
-42. Broken Access Control (IDOR) – PDF Upload Lets Any User Write Into Another User's Collection.  
+44. Broken Access Control (IDOR) – PDF Upload Lets Any User Write Into Another User's Collection.  
     https://github.com/mrmn2/PdfDing/security/advisories/GHSA-q4p5-xx8j-5xwc
 
 
