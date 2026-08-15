@@ -89,8 +89,8 @@ This repository contains:
 22. Stored HTML/script injection via block name in hint, backlink, and breadcrumb rendering (regression of a prior fix, plus two unpatched sibling instances)
     https://github.com/siyuan-note/siyuan/security/advisories/GHSA-hf87-qh3j-3p88
 
-
-
+23. Stored HTML/script injection via unescaped confirmDialog() content in bazaar package name handling
+    https://github.com/siyuan-note/siyuan/security/advisories/GHSA-hvwp-43j9-4xgf
 ### FileRise (2)
 
 22. Trailing‑dot filename bypasses `UploadNamePolicy` strict‑mode extension restrictions.  
