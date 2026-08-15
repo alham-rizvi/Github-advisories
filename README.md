@@ -86,6 +86,9 @@ This repository contains:
 21. Unescaped URL concatenation into `evaluateJavaScript` allows JavaScript injection via the `siyuan://` custom URL scheme.  
     https://github.com/siyuan-note/siyuan/security/advisories/GHSA-7ffh-xpqv-mh58
 
+22. Stored HTML/script injection via block name in hint, backlink, and breadcrumb rendering (regression of a prior fix, plus two unpatched sibling instances)
+    https://github.com/siyuan-note/siyuan/security/advisories/GHSA-hf87-qh3j-3p88
+
 
 
 ### FileRise (2)
