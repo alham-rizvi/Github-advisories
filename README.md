@@ -91,6 +91,17 @@ This repository contains:
 
 23. Stored HTML/script injection via unescaped confirmDialog() content in bazaar package name handling
     https://github.com/siyuan-note/siyuan/security/advisories/GHSA-hvwp-43j9-4xgf
+
+24. Publish-mode "invisible" content is not filtered from SQL embed blocks, attribute-view keys, or attribute-view backlinks
+    https://github.com/siyuan-note/siyuan/security/advisories/GHSA-2pgf-jv7c-q7rx
+
+25. /history/*path and /repo/diff/*path were not updated to use the new IsForbiddenAbsPath guard added in GHSA-c8r8-95hg-mp34, potentially exposing historical snapshots of data/.siyuan/publishAccess.json (plaintext publish passwords) and data/templates/*
+    https://github.com/siyuan-note/siyuan/security/advisories/GHSA-3cm4-ccvw-6xr6
+
+26. Sensitive workspace files (including conf.json secrets) readable via /api/template/render, inconsistent with the file API's own sensitive-path blocklist
+    https://github.com/siyuan-note/siyuan/security/advisories/GHSA-9jfx-rc58-h23j
+
+
 ### FileRise (2)
 
 22. Trailing‑dot filename bypasses `UploadNamePolicy` strict‑mode extension restrictions.  
