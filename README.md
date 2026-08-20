@@ -15,7 +15,50 @@ This repository contains:
 
 ## 🛡️ Assigned CVEs
 
-*Coming soon.*
+1. HTTP Basic Auth path in `CheckAuth()` bypasses the workspace access‑code CAPTCHA/lockout, allowing unthrottled remote brute‑force of the admin credential.
+https://nvd.nist.gov/vuln/detail/CVE-2026-73046[CVE-2026-73046]
+
+2. Unthrottled brute-force of per-notebook Publish password via /api/filetree/authFilePublishAccess
+   https://nvd.nist.gov/vuln/detail/CVE-2026-73045
+
+3. Unthrottled brute-force of `Conf.Api.Token` via header/query auth in `CheckAuth()`, allowing unlimited automated guessing of a weakened API admin token
+   https://nvd.nist.gov/vuln/detail/CVE-2026-73056
+
+4. Session-cookie authentication branch of `CheckAuth()` has no Origin/Referer validation and the session cookie sets no explicit `SameSite` attribute, leaving CSRF protection entirely dependent on undocumented browser defaults
+   https://nvd.nist.gov/vuln/detail/CVE-2026-74867
+
+5.Unthrottled brute-force of Publish Service Basic Auth accounts in `PublishServiceTransport.RoundTrip()`, allowing unlimited automated guessing of named publish-viewer passwords on a separate, unauthenticated-by-default port
+   https://nvd.nist.gov/vuln/detail/CVE-2026-74868
+
+6. Unescaped workspace path concatenated into a UAC-elevated command line allows local privilege escalation via the bundled elevator.exe helper
+   https://nvd.nist.gov/vuln/detail/CVE-2026-74801
+
+7. Stored XSS via arbitrary-file assets served same-origin without Content-Disposition or X-Content-Type-Options, escalating to full kernel API access
+   https://nvd.nist.gov/vuln/detail/CVE-2026-74800
+
+8. Go net/http/pprof debug endpoints, including heap dumps, are registered fully unauthenticated whenever --mode is not exactly "prod", exposing in-memory secrets (AI provider API keys, AccessAuthCode) with no corresponding warning on the flag ```
+   https://nvd.nist.gov/vuln/detail/CVE-2026-74799
+
+9. Path Traversal in MCP tool database_clean (RemoveUnusedAttributeView) leads to Arbitrary File Read (via history copy)
+    https://nvd.nist.gov/vuln/detail/CVE-2026-74899
+
+10. Arbitrary File Deletion, missed by the recent GHSA-7hm9-v7vf-7g4w fix
+    https://nvd.nist.gov/vuln/detail/CVE-2026-74798
+
+11. Unauthenticated Path Traversal via Missing Directory-Boundary Check in `plugin-asset-map.php` Static Asset Server (`index.php`)
+    https://nvd.nist.gov/vuln/detail/CVE-2026-74907
+
+12. Six publish-mode reader-facing endpoints filter results using the "invisible" list instead of the "disabled" (forbidden) list, leaking content from notebooks/documents an admin explicitly disabled from publishing (update: eight endpoints confirmed, see body)
+    https://nvd.nist.gov/vuln/detail/CVE-2026-74906
+
+13. 17 block metadata/content endpoints in kernel/api/block.go (getRefText, getBlockBreadcrumb, checkBlockExist, and 14 others) have zero publish-access filtering, reachable by anonymous publish-mode readers
+    https://nvd.nist.gov/vuln/detail/CVE-2026-74904
+
+14. XSS-to-RCE via malicious filename in the upload/drag-drop validation flow (app/src/protyle/upload/index.ts), reflected unescaped into showMessage's insertAdjacentHTML sink
+    https://nvd.nist.gov/vuln/detail/CVE-2026-74902
+
+   
+    
 
 
 
@@ -23,7 +66,7 @@ This repository contains:
 
 ### SiYuan (21)
 
-1. HTTP Basic Auth path in `CheckAuth()` bypasses the workspace access‑code CAPTCHA/lockout, allowing unthrottled remote brute‑force of the admin credential.  
+1. HTTP Basic Auth path in `CheckAuth()` bypasses the workspace access‑code CAPTCHA/lockout, allowing unthrottled remote brute‑force of the admin credential.
    https://github.com/siyuan-note/siyuan/security/advisories/GHSA-w3xh-mmmh-r54v
 
 2. Unthrottled brute‑force of per‑notebook Publish password via `/api/filetree/authFilePublishAccess`.  
