@@ -57,9 +57,11 @@ https://nvd.nist.gov/vuln/detail/CVE-2026-73046[CVE-2026-73046]
 14. XSS-to-RCE via malicious filename in the upload/drag-drop validation flow (app/src/protyle/upload/index.ts), reflected unescaped into showMessage's insertAdjacentHTML sink
     https://nvd.nist.gov/vuln/detail/CVE-2026-74902
 
-   
-    
+15. Zero-click XSS-to-RCE via unescaped block name/alias/memo in the "((" block-reference autocomplete hint popup (app/src/protyle/hint/extend.ts), fires on render with no user interaction beyond typing a reference
+    https://nvd.nist.gov/vuln/detail/CVE-2026-75916
 
+16. Attribute-breakout XSS-to-RCE via unescaped document bookmark/alias/memo/name fields in the "move/link to" file-tree picker's tooltip (app/src/util/pathName.ts), triggered by hovering
+    https://nvd.nist.gov/vuln/detail/CVE-2026-75917
 
 
 ## 📄 Public Security Advisories (42)
@@ -212,6 +214,14 @@ https://nvd.nist.gov/vuln/detail/CVE-2026-73046[CVE-2026-73046]
 23. Scoped API key can edit page permissions outside the scope it was granted
     https://github.com/getgrav/grav/security/advisories/GHSA-mcx6-4rvg-7r8v
 
+- **gravCMS** — Unescaped `[lorem]` and `[details]` shortcode parameters allow stored XSS in Shortcode Core.  
+  https://github.com/getgrav/grav/security/advisories/GHSA-hvm8-wx3f-j774
+
+- **gravCMS** — Stored XSS via username/display name: `tHtml()` interpolates untrusted values into a template before markdown‑parsing it, and usernames are not restricted against HTML metacharacters.  
+  https://github.com/getgrav/grav/security/advisories/GHSA-96xm-c5hr-59rx
+
+- **gravCMS** — Unsanitized `marked.js` output injected via `{@html}` in MarkdownEditor and MarkdownModal, `javascript:` URI XSS, one path reachable via third‑party plugin/theme changelogs with no site access required.  
+  https://github.com/getgrav/grav/security/advisories/GHSA-752r-88j4-vxm3
 
 
 ### note-mark (2)
@@ -256,14 +266,6 @@ The following vulnerabilities have been responsibly reported to the respective m
 - **Outline** — Per‑IP Share‑Subscription Creation Limit Can Be Bypassed Indefinitely via the Stale‑Unconfirmed Resend Path.  
   https://github.com/outline/outline/security/advisories/GHSA-px83-2m6m-7frj
 
-- **gravCMS** — Unescaped `[lorem]` and `[details]` shortcode parameters allow stored XSS in Shortcode Core.  
-  https://github.com/getgrav/grav/security/advisories/GHSA-hvm8-wx3f-j774
-
-- **gravCMS** — Stored XSS via username/display name: `tHtml()` interpolates untrusted values into a template before markdown‑parsing it, and usernames are not restricted against HTML metacharacters.  
-  https://github.com/getgrav/grav/security/advisories/GHSA-96xm-c5hr-59rx
-
-- **gravCMS** — Unsanitized `marked.js` output injected via `{@html}` in MarkdownEditor and MarkdownModal, `javascript:` URI XSS, one path reachable via third‑party plugin/theme changelogs with no site access required.  
-  https://github.com/getgrav/grav/security/advisories/GHSA-752r-88j4-vxm3
 
 - **fleet** - Enabling "Allow IdP-initiated SSO login" globally disables SAML InResponseTo replay protection for all logins, not just IdP-initiated ones
   https://github.com/fleetdm/fleet/security/advisories/GHSA-8rr8-84pc-6rpp#advisory-comment-271185
