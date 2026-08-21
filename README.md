@@ -27,7 +27,7 @@ https://nvd.nist.gov/vuln/detail/CVE-2026-73046[CVE-2026-73046]
 4. Session-cookie authentication branch of `CheckAuth()` has no Origin/Referer validation and the session cookie sets no explicit `SameSite` attribute, leaving CSRF protection entirely dependent on undocumented browser defaults
    https://nvd.nist.gov/vuln/detail/CVE-2026-74867
 
-5.Unthrottled brute-force of Publish Service Basic Auth accounts in `PublishServiceTransport.RoundTrip()`, allowing unlimited automated guessing of named publish-viewer passwords on a separate, unauthenticated-by-default port
+5. Unthrottled brute-force of Publish Service Basic Auth accounts in `PublishServiceTransport.RoundTrip()`, allowing unlimited automated guessing of named publish-viewer passwords on a separate, unauthenticated-by-default port
    https://nvd.nist.gov/vuln/detail/CVE-2026-74868
 
 6. Unescaped workspace path concatenated into a UAC-elevated command line allows local privilege escalation via the bundled elevator.exe helper
