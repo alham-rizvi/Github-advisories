@@ -146,6 +146,27 @@ https://nvd.nist.gov/vuln/detail/CVE-2026-73046[CVE-2026-73046]
 26. Sensitive workspace files (including conf.json secrets) readable via /api/template/render, inconsistent with the file API's own sensitive-path blocklist
     https://github.com/siyuan-note/siyuan/security/advisories/GHSA-9jfx-rc58-h23j
 
+27. Unauthenticated unique request paths grow the global ControlConcurrency map without bound
+    https://github.com/siyuan-note/siyuan/security/advisories/GHSA-p59v-3q54-qq55
+
+28. Publish-auth throttling retains unique invalid-user keys without a bound
+    https://github.com/siyuan-note/siyuan/security/advisories/GHSA-2x7j-p79w-7744
+
+29. Publish-service Basic Auth creates unbounded persistent sessions
+    https://github.com/siyuan-note/siyuan/security/advisories/GHSA-f4vj-ppp2-5hg4
+
+30. Reader-role file API follows workspace assets symlinks outside the workspace
+    https://github.com/siyuan-note/siyuan/security/advisories/GHSA-g7gf-v79m-jwrm
+
+31. Unauthenticated UI-process registration retains attacker-controlled identifiers without bound
+   https://github.com/siyuan-note/siyuan/security/advisories/GHSA-wv96-wmf5-xvj2
+
+32. Linux MCP publish-access path guard bypass exposes publishAccess.json
+    https://github.com/siyuan-note/siyuan/security/advisories/GHSA-mmgw-3mx9-cfwp
+
+33. Reader-role undoState discloses private related document root IDs
+    https://github.com/siyuan-note/siyuan/security/advisories/GHSA-6gf8-q9ch-w732
+
 
 ### FileRise (2)
 
