@@ -168,7 +168,16 @@ https://nvd.nist.gov/vuln/detail/CVE-2026-73046[CVE-2026-73046]
     https://github.com/siyuan-note/siyuan/security/advisories/GHSA-6gf8-q9ch-w732
 
 34. Reader can read files from an explicitly hidden notebook
-   https://github.com/siyuan-note/siyuan/security/advisories/GHSA-8ggq-wq3f-vxrw
+   https://github.com/siyuan-note/siyuan/security/advisories/GHSA-8ggq-wq3f-vxrw\
+
+35. Reader Can Enumerate Private Attribute-View Key Definitions
+    https://github.com/siyuan-note/siyuan/security/advisories/GHSA-j4qq-w6qx-6839
+
+36. Published Attribute-View Rows Retain Hidden KeyValues
+    https://github.com/siyuan-note/siyuan/security/advisories/GHSA-vc7j-5f5p-3x75
+
+37. Reader can read files from an explicitly hidden notebook
+   https://github.com/siyuan-note/siyuan/security/advisories/GHSA-8ggq-wq3f
 
 ### FileRise (2)
 
