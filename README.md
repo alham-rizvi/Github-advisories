@@ -63,6 +63,9 @@ https://nvd.nist.gov/vuln/detail/CVE-2026-73046[CVE-2026-73046]
 16. Attribute-breakout XSS-to-RCE via unescaped document bookmark/alias/memo/name fields in the "move/link to" file-tree picker's tooltip (app/src/util/pathName.ts), triggered by hovering
     https://nvd.nist.gov/vuln/detail/CVE-2026-75917
 
+17. SiYuan before v3.7.4 Path Traversal via packageName
+    https://www.cve.org/CVERecord?id=CVE-2026-77086
+
 
 ## 📄 Public Security Advisories (60)
 
