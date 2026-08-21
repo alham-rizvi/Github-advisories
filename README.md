@@ -167,6 +167,8 @@ https://nvd.nist.gov/vuln/detail/CVE-2026-73046[CVE-2026-73046]
 33. Reader-role undoState discloses private related document root IDs
     https://github.com/siyuan-note/siyuan/security/advisories/GHSA-6gf8-q9ch-w732
 
+34. Reader can read files from an explicitly hidden notebook
+   https://github.com/siyuan-note/siyuan/security/advisories/GHSA-8ggq-wq3f-vxrw
 
 ### FileRise (2)
 
