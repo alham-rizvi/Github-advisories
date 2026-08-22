@@ -66,6 +66,18 @@ https://nvd.nist.gov/vuln/detail/CVE-2026-73046[CVE-2026-73046]
 17. SiYuan before v3.7.4 Path Traversal via packageName
     https://www.cve.org/CVERecord?id=CVE-2026-77086
 
+18. SiYuan before v3.8.0 Secret Exfiltration via http_request URL
+    https://www.cve.org/CVERecord?id=CVE-2026-59809
+
+19. SiYuan before v3.8.0 Incomplete Path Blocklist via MCP file tool
+    https://www.cve.org/CVERecord?id=CVE-2026-60083
+
+20. SiYuan before v3.7.4 Arbitrary File Deletion via removeTemplate
+   https://www.cve.org/CVERecord?id=CVE-2026-60084
+
+21.  SiYuan before v3.7.4 Plugin Overwrite via Bazaar Install
+    https://www.cve.org/CVERecord?id=CVE-2026-62204
+
 
 ## 📄 Public Security Advisories (63)
 
