@@ -184,17 +184,17 @@ https://nvd.nist.gov/vuln/detail/CVE-2026-73046[CVE-2026-73046]
 
 ### FileRise (2)
 
-35. Trailing‑dot filename bypasses `UploadNamePolicy` strict‑mode extension restrictions.
+38. Trailing‑dot filename bypasses `UploadNamePolicy` strict‑mode extension restrictions.
     https://github.com/error311/FileRise/security/advisories/GHSA-8vmq-qjrm-m5f2
 
-36. OnlyOffice callback silently skips JWT verification when the token is omitted.
+39. OnlyOffice callback silently skips JWT verification when the token is omitted.
     https://github.com/error311/FileRise/security/advisories/GHSA-wg9q-3w29-xv5q
 
 
 
 ### REDAXO (1)
 
-37. Mediapool: Unsanitized SVG uploads are publicly reachable, enabling Stored XSS.
+40. Mediapool: Unsanitized SVG uploads are publicly reachable, enabling Stored XSS.
     https://github.com/redaxo/core/security/advisories/GHSA-2p3g-jr7p-qwwx
 
 
