@@ -305,6 +305,12 @@ The following vulnerabilities have been responsibly reported to the respective m
 - **fleet** - Enabling "Allow IdP-initiated SSO login" globally disables SAML InResponseTo replay protection for all logins, not just IdP-initiated ones
   https://github.com/fleetdm/fleet/security/advisories/GHSA-8rr8-84pc-6rpp#advisory-comment-271185
 
+- **Joplin** - Any website open in the browser can trigger and win Joplin's Web Clipper pairing dialog, stealing the permanent full-access API token, because the local server has no Origin/Referer restriction and the confirmation dialog shows no identifying information
+  https://github.com/laurent22/joplin/security/advisories/GHSA-9728-v7ww-mxjv
+
+- **Joplin** - Password reset accepts any valid per-user token including CSRF tokens and email-confirmation tokens because the token store has no purpose/type field, enabling full account takeover from a leaked CSRF token or a scanned confirmation-email link
+  https://github.com/laurent22/joplin/security/advisories/GHSA-8qm8-mp6h-qf35
+
 
 
 ## Responsible Disclosure
