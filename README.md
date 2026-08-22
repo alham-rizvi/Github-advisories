@@ -67,9 +67,9 @@ https://nvd.nist.gov/vuln/detail/CVE-2026-73046[CVE-2026-73046]
     https://www.cve.org/CVERecord?id=CVE-2026-77086
 
 
-## 📄 Public Security Advisories (60)
+## 📄 Public Security Advisories (63)
 
-### SiYuan (34)
+### SiYuan (37)
 
 1. HTTP Basic Auth path in `CheckAuth()` bypasses the workspace access‑code CAPTCHA/lockout, allowing unthrottled remote brute‑force of the admin credential.
    https://github.com/siyuan-note/siyuan/security/advisories/GHSA-w3xh-mmmh-r54v
@@ -171,7 +171,7 @@ https://nvd.nist.gov/vuln/detail/CVE-2026-73046[CVE-2026-73046]
     https://github.com/siyuan-note/siyuan/security/advisories/GHSA-6gf8-q9ch-w732
 
 34. Reader can read files from an explicitly hidden notebook
-   https://github.com/siyuan-note/siyuan/security/advisories/GHSA-8ggq-wq3f-vxrw\
+   https://github.com/siyuan-note/siyuan/security/advisories/GHSA-8ggq-wq3f-vxrw
 
 35. Reader Can Enumerate Private Attribute-View Key Definitions
     https://github.com/siyuan-note/siyuan/security/advisories/GHSA-j4qq-w6qx-6839
@@ -201,80 +201,80 @@ https://nvd.nist.gov/vuln/detail/CVE-2026-73046[CVE-2026-73046]
 
 ### Grav CMS (19)
 
-38. Unauthenticated Path Traversal via missing directory‑boundary checks in `plugin-asset-map.php`.
+41. Unauthenticated Path Traversal via missing directory‑boundary checks in `plugin-asset-map.php`.
     https://github.com/getgrav/grav/security/advisories/GHSA-4v9q-p283-qc2m
 
-39. `onApiUserListRowAction` "unlock" handler does not check the target account's privilege level, letting an `api.users.write` account clear an admin.super account's lockout.
+42. `onApiUserListRowAction` "unlock" handler does not check the target account's privilege level, letting an `api.users.write` account clear an admin.super account's lockout.
     https://github.com/getgrav/grav/security/advisories/GHSA-985r-mpj8-5rqw#event-910316
 
-40. `media_directory()` Twig function allows filesystem path traversal and file content disclosure from sandboxed page content.
+43. `media_directory()` Twig function allows filesystem path traversal and file content disclosure from sandboxed page content.
     https://github.com/getgrav/grav/security/advisories/GHSA-47ch-6w46-6xm7
 
-41. `sendInvitationEmail()` is missing the untrusted‑Host‑header protection the other three security‑sensitive email links have, and `require_trusted_host` only enforces one of four flows.
+44. `sendInvitationEmail()` is missing the untrusted‑Host‑header protection the other three security‑sensitive email links have, and `require_trusted_host` only enforces one of four flows.
     https://github.com/getgrav/grav/security/advisories/GHSA-69vf-mjxw-x79j
 
-42. `Scheduler\Job::createLockFile()` follows symlinks in the world‑writable system temp directory (local symlink attack) [INFORMATIONAL].
+45. `Scheduler\Job::createLockFile()` follows symlinks in the world‑writable system temp directory (local symlink attack) [INFORMATIONAL].
     https://github.com/getgrav/grav/security/advisories/GHSA-q8w8-6cq5-j4h2
 
-43. [flex‑objects] shortcode bypasses Flex directory ACL entirely, exposing any registered collection to anyone with page‑edit access.
+46. [flex‑objects] shortcode bypasses Flex directory ACL entirely, exposing any registered collection to anyone with page‑edit access.
     https://github.com/getgrav/grav/security/advisories/GHSA-x929-528m-vx2m#event-910540
 
-44. Webhook delivery re‑resolves the target hostname after validating it, allowing the SSRF guard to be bypassed by DNS rebinding.
+47. Webhook delivery re‑resolves the target hostname after validating it, allowing the SSRF guard to be bypassed by DNS rebinding.
     https://github.com/getgrav/grav/security/advisories/GHSA-hq2v-cgw4-fw2w#event-910555
 
-45. `config_denied_paths` default list omits `system`, exposing real secrets (e.g., `system.cache.redis.password`) via the Twig sandbox when `config_access` is enabled.
+48. `config_denied_paths` default list omits `system`, exposing real secrets (e.g., `system.cache.redis.password`) via the Twig sandbox when `config_access` is enabled.
     https://github.com/getgrav/grav/security/advisories/GHSA-xjw5-q542-3vmr
 
-46. `UserInterface` offsetGet/offsetExists allow‑listed in Twig sandbox let editor‑authored content leak `hashed_password` and 2FA secrets via `offsetGet()`.
+49. `UserInterface` offsetGet/offsetExists allow‑listed in Twig sandbox let editor‑authored content leak `hashed_password` and 2FA secrets via `offsetGet()`.
     https://github.com/getgrav/grav/security/advisories/GHSA-3jhr-mxmx-38cx
 
-47. Origin validation bypass in `Uri::referrer()` and `Pages::referrerRoute()` via unanchored prefix match.
+50. Origin validation bypass in `Uri::referrer()` and `Pages::referrerRoute()` via unanchored prefix match.
     https://github.com/getgrav/grav/security/advisories/GHSA-9ccq-2jfg-qw33
 
-48. Non‑constant‑time nonce comparison in `Utils::verifyNonce()` used for CSRF protection.
+51. Non‑constant‑time nonce comparison in `Utils::verifyNonce()` used for CSRF protection.
     https://github.com/getgrav/grav/security/advisories/GHSA-38p6-h87p-r4cg
 
-49. Password reset and activation tokens compared with non‑constant‑time `===` instead of `hash_equals()`, and reset‑submission endpoint has no rate limiting.
+52. Password reset and activation tokens compared with non‑constant‑time `===` instead of `hash_equals()`, and reset‑submission endpoint has no rate limiting.
     https://github.com/getgrav/grav/security/advisories/GHSA-x239-6jqx-5hjh
 
-50. User registration discloses whether an email address is already registered (email enumeration).
+53. User registration discloses whether an email address is already registered (email enumeration).
     https://github.com/getgrav/grav/security/advisories/GHSA-crh8-xm27-j9g9
 
-51. The `system`, `site`, and `theme` Twig variables bypass the content sandbox entirely and are never covered by `config_denied_paths`.
+54. The `system`, `site`, and `theme` Twig variables bypass the content sandbox entirely and are never covered by `config_denied_paths`.
     https://github.com/getgrav/grav/security/advisories/GHSA-p597-crqc-m349
 
-52. Scoped API key can act on super-admin accounts across seven user-management endpoints
+55. Scoped API key can act on super-admin accounts across seven user-management endpoints
     https://github.com/getgrav/grav/security/advisories/GHSA-94q7-vrqr-cx5v
 
-53. Scoped API key can edit page permissions outside the scope it was granted
+56. Scoped API key can edit page permissions outside the scope it was granted
     https://github.com/getgrav/grav/security/advisories/GHSA-mcx6-4rvg-7r8v
 
-54. **gravCMS** — Unescaped `[lorem]` and `[details]` shortcode parameters allow stored XSS in Shortcode Core.
+57. **gravCMS** — Unescaped `[lorem]` and `[details]` shortcode parameters allow stored XSS in Shortcode Core.
   https://github.com/getgrav/grav/security/advisories/GHSA-hvm8-wx3f-j774
 
-55. **gravCMS** — Stored XSS via username/display name: `tHtml()` interpolates untrusted values into a template before markdown‑parsing it, and usernames are not restricted against HTML metacharacters.
+58. **gravCMS** — Stored XSS via username/display name: `tHtml()` interpolates untrusted values into a template before markdown‑parsing it, and usernames are not restricted against HTML metacharacters.
   https://github.com/getgrav/grav/security/advisories/GHSA-96xm-c5hr-59rx
 
-56. **gravCMS** — Unsanitized `marked.js` output injected via `{@html}` in MarkdownEditor and MarkdownModal, `javascript:` URI XSS, one path reachable via third‑party plugin/theme changelogs with no site access required.
+59. **gravCMS** — Unsanitized `marked.js` output injected via `{@html}` in MarkdownEditor and MarkdownModal, `javascript:` URI XSS, one path reachable via third‑party plugin/theme changelogs with no site access required.
   https://github.com/getgrav/grav/security/advisories/GHSA-752r-88j4-vxm3
 
 
 ### note-mark (2)
 
-57. Token exchange grant (RFC 8693) authenticates the caller based solely on whether their supplied `subject_token` is accepted by the OIDC provider's userinfo endpoint, with no check that the token was actually issued for note‑mark itself – allowing an access token obtained through any other client of the same identity provider to authenticate as that user here.
+60. Token exchange grant (RFC 8693) authenticates the caller based solely on whether their supplied `subject_token` is accepted by the OIDC provider's userinfo endpoint, with no check that the token was actually issued for note‑mark itself – allowing an access token obtained through any other client of the same identity provider to authenticate as that user here.
     https://github.com/enchant97/note-mark/security/advisories/GHSA-3j7j-3hq5-h3rp#event-910592
 
-58. No audience check during RFC 8693 token exchange.
+61. No audience check during RFC 8693 token exchange.
     https://github.com/enchant97/note-mark/security/advisories/GHSA-3j7j-3hq5-h3rp#event-917323
 
 
 
 ### PDFding (2)
 
-59. Path Traversal / Arbitrary File Write via Malicious Object Keys in Backup Restore (`recover_data`).
+62. Path Traversal / Arbitrary File Write via Malicious Object Keys in Backup Restore (`recover_data`).
     https://github.com/mrmn2/PdfDing/security/advisories/GHSA-jjv3-jrv3-8r2g
 
-60. Broken Access Control (IDOR) – PDF Upload Lets Any User Write Into Another User's Collection.
+63. Broken Access Control (IDOR) – PDF Upload Lets Any User Write Into Another User's Collection.
     https://github.com/mrmn2/PdfDing/security/advisories/GHSA-q4p5-xx8j-5xwc
 
 
@@ -321,7 +321,7 @@ This repository contains **only publicly available advisories and CVEs**. Vulner
 
 ### Statistics
 
-- **Public Advisories:** 60
+- **Public Advisories:** 63
 - **Assigned CVEs:** Updating soon
 - **Reports Under Review:** 9
 
