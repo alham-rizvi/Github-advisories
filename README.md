@@ -16,52 +16,52 @@ This repository contains:
 ## 🛡️ Assigned CVEs
 
 1. HTTP Basic Auth path in `CheckAuth()` bypasses the workspace access‑code CAPTCHA/lockout, allowing unthrottled remote brute‑force of the admin credential.
-https://nvd.nist.gov/vuln/detail/CVE-2026-73046[CVE-2026-73046]
+https://www.cve.org/CVERecord?id=CVE-2026-73046
 
 2. Unthrottled brute-force of per-notebook Publish password via /api/filetree/authFilePublishAccess
-   https://nvd.nist.gov/vuln/detail/CVE-2026-73045
+   https://www.cve.org/CVERecord?id=CVE-2026-73045
 
 3. Unthrottled brute-force of `Conf.Api.Token` via header/query auth in `CheckAuth()`, allowing unlimited automated guessing of a weakened API admin token
-   https://nvd.nist.gov/vuln/detail/CVE-2026-73056
+   https://www.cve.org/CVERecord?id=CVE-2026-73056
 
 4. Session-cookie authentication branch of `CheckAuth()` has no Origin/Referer validation and the session cookie sets no explicit `SameSite` attribute, leaving CSRF protection entirely dependent on undocumented browser defaults
-   https://nvd.nist.gov/vuln/detail/CVE-2026-74867
+   https://www.cve.org/CVERecord?id=CVE-2026-74867
 
 5. Unthrottled brute-force of Publish Service Basic Auth accounts in `PublishServiceTransport.RoundTrip()`, allowing unlimited automated guessing of named publish-viewer passwords on a separate, unauthenticated-by-default port
-   https://nvd.nist.gov/vuln/detail/CVE-2026-74868
+   https://www.cve.org/CVERecord?id=CVE-2026-74868
 
 6. Unescaped workspace path concatenated into a UAC-elevated command line allows local privilege escalation via the bundled elevator.exe helper
-   https://nvd.nist.gov/vuln/detail/CVE-2026-74801
+   https://www.cve.org/CVERecord?id=CVE-2026-74801
 
 7. Stored XSS via arbitrary-file assets served same-origin without Content-Disposition or X-Content-Type-Options, escalating to full kernel API access
-   https://nvd.nist.gov/vuln/detail/CVE-2026-74800
+   https://www.cve.org/CVERecord?id=CVE-2026-74800
 
 8. Go net/http/pprof debug endpoints, including heap dumps, are registered fully unauthenticated whenever --mode is not exactly "prod", exposing in-memory secrets (AI provider API keys, AccessAuthCode) with no corresponding warning on the flag ```
-   https://nvd.nist.gov/vuln/detail/CVE-2026-74799
+   https://www.cve.org/CVERecord?id=CVE-2026-74799
 
 9. Path Traversal in MCP tool database_clean (RemoveUnusedAttributeView) leads to Arbitrary File Read (via history copy)
-    https://nvd.nist.gov/vuln/detail/CVE-2026-74899
+    https://www.cve.org/CVERecord?id=CVE-2026-74899
 
 10. Arbitrary File Deletion, missed by the recent GHSA-7hm9-v7vf-7g4w fix
-    https://nvd.nist.gov/vuln/detail/CVE-2026-74798
+    https://www.cve.org/CVERecord?id=CVE-2026-74798
 
 11. Unauthenticated Path Traversal via Missing Directory-Boundary Check in `plugin-asset-map.php` Static Asset Server (`index.php`)
-    https://nvd.nist.gov/vuln/detail/CVE-2026-74907
+    https://www.cve.org/CVERecord?id=CVE-2026-74907
 
 12. Six publish-mode reader-facing endpoints filter results using the "invisible" list instead of the "disabled" (forbidden) list, leaking content from notebooks/documents an admin explicitly disabled from publishing (update: eight endpoints confirmed, see body)
-    https://nvd.nist.gov/vuln/detail/CVE-2026-74906
+    https://www.cve.org/CVERecord?id=CVE-2026-74906
 
 13. 17 block metadata/content endpoints in kernel/api/block.go (getRefText, getBlockBreadcrumb, checkBlockExist, and 14 others) have zero publish-access filtering, reachable by anonymous publish-mode readers
-    https://nvd.nist.gov/vuln/detail/CVE-2026-74904
+    https://www.cve.org/CVERecord?id=CVE-2026-74904
 
 14. XSS-to-RCE via malicious filename in the upload/drag-drop validation flow (app/src/protyle/upload/index.ts), reflected unescaped into showMessage's insertAdjacentHTML sink
-    https://nvd.nist.gov/vuln/detail/CVE-2026-74902
+    https://www.cve.org/CVERecord?id=CVE-2026-74902
 
 15. Zero-click XSS-to-RCE via unescaped block name/alias/memo in the "((" block-reference autocomplete hint popup (app/src/protyle/hint/extend.ts), fires on render with no user interaction beyond typing a reference
-    https://nvd.nist.gov/vuln/detail/CVE-2026-75916
+    https://www.cve.org/CVERecord?id=CVE-2026-75916
 
 16. Attribute-breakout XSS-to-RCE via unescaped document bookmark/alias/memo/name fields in the "move/link to" file-tree picker's tooltip (app/src/util/pathName.ts), triggered by hovering
-    https://nvd.nist.gov/vuln/detail/CVE-2026-75917
+    https://www.cve.org/CVERecord?id=CVE-2026-75917
 
 17. SiYuan before v3.7.4 Path Traversal via packageName
     https://www.cve.org/CVERecord?id=CVE-2026-77086
@@ -79,43 +79,43 @@ https://nvd.nist.gov/vuln/detail/CVE-2026-73046[CVE-2026-73046]
     https://www.cve.org/CVERecord?id=CVE-2026-62204
 
 22. Grav before 2.0.16 Information Disclosure via Twig Sandbox
-    https://nvd.nist.gov/vuln/detail/cve-2026-76846
+    https://www.cve.org/CVERecord?id=CVE-2026-76846
 
 23. Grav before 2.0.16 Information Disclosure via offsetGet
-   https://nvd.nist.gov/vuln/detail/cve-2026-76839
+   https://www.cve.org/CVERecord?id=CVE-2026-76839
 
 24. Grav CMS before 2.0.16 Origin Validation Bypass via Referer
-   https://nvd.nist.gov/vuln/detail/cve-2026-72702
+   https://www.cve.org/CVERecord?id=CVE-2026-72702
 
 25. Grav CMS before 2.0.16 Timing Attack via verifyNonce
-   https://nvd.nist.gov/vuln/detail/cve-2026-72702
+   https://www.cve.org/CVERecord?id=CVE-2026-72702
 
 26. Grav before 3.9.1 Timing Attack via Non-Constant-Time Token Comparison
-   https://nvd.nist.gov/vuln/detail/cve-2026-72700
+   https://www.cve.org/CVERecord?id=CVE-2026-72700
 
 27. Grav Login Plugin before 3.9.1 Email Enumeration via Registration
-    https://nvd.nist.gov/vuln/detail/cve-2026-72699
+    https://www.cve.org/CVERecord?id=CVE-2026-72699
 
 28. Grav CMS before 2.0.16 Information Disclosure via Twig Sandbox Bypass
-   https://nvd.nist.gov/vuln/detail/cve-2026-72698
+   https://www.cve.org/CVERecord?id=CVE-2026-72698
 
 29. Grav CMS before 2.0.16 Path Traversal via media_directory
-   https://nvd.nist.gov/vuln/detail/cve-2026-72697
+   https://www.cve.org/CVERecord?id=CVE-2026-72697
 
 30. Grav CMS before 2.0.16 Symlink Following via createLockFile
-   https://nvd.nist.gov/vuln/detail/cve-2026-72696
+   https://www.cve.org/CVERecord?id=CVE-2026-72696
 
 31. Grav Login Plugin before 1.0.16 Privilege Escalation via Unlock
-   https://nvd.nist.gov/vuln/detail/cve-2026-56710
+   https://www.cve.org/CVERecord?id=CVE-2026-56710
 
 32. Grav before 3.9.2 Host Header Injection via sendInvitationEmail
-   https://nvd.nist.gov/vuln/detail/cve-2026-56709
+   https://www.cve.org/CVERecord?id=CVE-2026-56709
 
 33. Grav API Plugin before 1.0.16 SSRF via DNS Rebinding
-   https://nvd.nist.gov/vuln/detail/cve-2026-56708
+   https://www.cve.org/CVERecord?id=CVE-2026-56708
 
 34. Grav Flex Objects 1.4.0 through 1.4.7 Authorization Bypass via Shortcode
-   https://nvd.nist.gov/vuln/detail/cve-2026-56707
+   https://www.cve.org/CVERecord?id=CVE-2026-56707
 
 
 ## 📄 Public Security Advisories (63)
@@ -232,6 +232,8 @@ https://nvd.nist.gov/vuln/detail/CVE-2026-73046[CVE-2026-73046]
 
 37. Reader can read files from an explicitly hidden notebook
    https://github.com/siyuan-note/siyuan/security/advisories/GHSA-8ggq-wq3f
+
+
 
 ### FileRise (2)
 
