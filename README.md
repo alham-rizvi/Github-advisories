@@ -96,7 +96,26 @@ https://nvd.nist.gov/vuln/detail/CVE-2026-73046[CVE-2026-73046]
 27. Grav Login Plugin before 3.9.1 Email Enumeration via Registration
     https://nvd.nist.gov/vuln/detail/cve-2026-72699
 
-28. 
+28. Grav CMS before 2.0.16 Information Disclosure via Twig Sandbox Bypass
+   https://nvd.nist.gov/vuln/detail/cve-2026-72698
+
+29. Grav CMS before 2.0.16 Path Traversal via media_directory
+   https://nvd.nist.gov/vuln/detail/cve-2026-72697
+
+30. Grav CMS before 2.0.16 Symlink Following via createLockFile
+   https://nvd.nist.gov/vuln/detail/cve-2026-72696
+
+31. Grav Login Plugin before 1.0.16 Privilege Escalation via Unlock
+   https://nvd.nist.gov/vuln/detail/cve-2026-56710
+
+32. Grav before 3.9.2 Host Header Injection via sendInvitationEmail
+   https://nvd.nist.gov/vuln/detail/cve-2026-56709
+
+33. Grav API Plugin before 1.0.16 SSRF via DNS Rebinding
+   https://nvd.nist.gov/vuln/detail/cve-2026-56708
+
+34. Grav Flex Objects 1.4.0 through 1.4.7 Authorization Bypass via Shortcode
+   https://nvd.nist.gov/vuln/detail/cve-2026-56707
 
 
 ## 📄 Public Security Advisories (63)
