@@ -78,6 +78,26 @@ https://nvd.nist.gov/vuln/detail/CVE-2026-73046[CVE-2026-73046]
 21.  SiYuan before v3.7.4 Plugin Overwrite via Bazaar Install
     https://www.cve.org/CVERecord?id=CVE-2026-62204
 
+22. Grav before 2.0.16 Information Disclosure via Twig Sandbox
+    https://nvd.nist.gov/vuln/detail/cve-2026-76846
+
+23. Grav before 2.0.16 Information Disclosure via offsetGet
+   https://nvd.nist.gov/vuln/detail/cve-2026-76839
+
+24. Grav CMS before 2.0.16 Origin Validation Bypass via Referer
+   https://nvd.nist.gov/vuln/detail/cve-2026-72702
+
+25. Grav CMS before 2.0.16 Timing Attack via verifyNonce
+   https://nvd.nist.gov/vuln/detail/cve-2026-72702
+
+26. Grav before 3.9.1 Timing Attack via Non-Constant-Time Token Comparison
+   https://nvd.nist.gov/vuln/detail/cve-2026-72700
+
+27. Grav Login Plugin before 3.9.1 Email Enumeration via Registration
+    https://nvd.nist.gov/vuln/detail/cve-2026-72699
+
+28. 
+
 
 ## 📄 Public Security Advisories (63)
 
