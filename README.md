@@ -117,6 +117,8 @@ https://www.cve.org/CVERecord?id=CVE-2026-73046
 34. Grav Flex Objects 1.4.0 through 1.4.7 Authorization Bypass via Shortcode
    https://www.cve.org/CVERecord?id=CVE-2026-56707
 
+35. 
+
 
 ## 📄 Public Security Advisories (63)
 
@@ -232,6 +234,26 @@ https://www.cve.org/CVERecord?id=CVE-2026-73046
 
 37. Reader can read files from an explicitly hidden notebook
    https://github.com/siyuan-note/siyuan/security/advisories/GHSA-8ggq-wq3f
+
+38. Reader-capable /api/export/preview and /api/lute/copyStdMarkdown expand publish-disabled embeds before publication filtering
+    https://github.com/siyuan-note/siyuan/security/advisories/GHSA-8wx4-fvqw-f5f8#event-972067
+
+39. Publish-mode /api/search/fullTextSearchBlock discloses private-match counts despite returning no private blocks
+    https://github.com/siyuan-note/siyuan/security/advisories/GHSA-g45v-hxvm-wccj#event-972055
+
+40. Stored XSS in notebook configuration via unescaped template paths
+   https://github.com/siyuan-note/siyuan/security/advisories/GHSA-v6wf-r2gr-rrgf#event-971554
+
+41. Stored XSS in Search Assets result rows via unescaped asset filenames
+   https://github.com/siyuan-note/siyuan/security/advisories/GHSA-qcw6-qm34-28h8#event-971539
+
+42. Stored XSS in Bazaar package cards via unescaped iconURL metadata
+   https://github.com/siyuan-note/siyuan/security/advisories/GHSA-rvcf-q4h8-w6c9#event-971526
+
+43. Stored XSS in Search Asset Preview via Unescaped Indexed Asset Content
+   https://github.com/siyuan-note/siyuan/security/advisories/GHSA-64gp-333q-mq6j#event-971501
+
+
 
 
 
