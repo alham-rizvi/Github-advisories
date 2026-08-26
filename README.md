@@ -120,6 +120,13 @@ https://www.cve.org/CVERecord?id=CVE-2026-73046
 35. SSRF in cors-proxy-worker.js via DNS-based hostname allowlist bypass [CVE-2026-77581]
    https://github.com/alam00000/bentopdf/security/advisories/GHSA-5xjf-rr5x-pcfj#event-961386
 
+36.  Grav before 1.0.18 Authentication Bypass via Scoped API Ke
+    https://www.cve.org/CVERecord?id=CVE-2026-80203
+
+37. Grav before 1.0.18 Authentication Bypass via Scoped API Key
+    https://www.cve.org/CVERecord?id=CVE-2026-80204
+
+
 
 ## 📄 Public Security Advisories (63)
 
