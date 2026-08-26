@@ -13,7 +13,7 @@ This repository contains:
 > Technical details and proof‑of‑concepts are intentionally withheld until the disclosure process is complete.
 
 
-## 🛡️ Assigned CVEs
+## 🛡️ Assigned CVEs (37)
 
 1. HTTP Basic Auth path in `CheckAuth()` bypasses the workspace access‑code CAPTCHA/lockout, allowing unthrottled remote brute‑force of the admin credential.
 https://www.cve.org/CVERecord?id=CVE-2026-73046
@@ -36,7 +36,7 @@ https://www.cve.org/CVERecord?id=CVE-2026-73046
 7. Stored XSS via arbitrary-file assets served same-origin without Content-Disposition or X-Content-Type-Options, escalating to full kernel API access
    https://www.cve.org/CVERecord?id=CVE-2026-74800
 
-8. Go net/http/pprof debug endpoints, including heap dumps, are registered fully unauthenticated whenever --mode is not exactly "prod", exposing in-memory secrets (AI provider API keys, AccessAuthCode) with no corresponding warning on the flag ```
+8. Go net/http/pprof debug endpoints, including heap dumps, are registered fully unauthenticated whenever --mode is not exactly "prod", exposing in-memory secrets (AI provider API keys, AccessAuthCode) with no corresponding warning on the flag
    https://www.cve.org/CVERecord?id=CVE-2026-74799
 
 9. Path Traversal in MCP tool database_clean (RemoveUnusedAttributeView) leads to Arbitrary File Read (via history copy)
@@ -75,7 +75,7 @@ https://www.cve.org/CVERecord?id=CVE-2026-73046
 20. SiYuan before v3.7.4 Arbitrary File Deletion via removeTemplate
    https://www.cve.org/CVERecord?id=CVE-2026-60084
 
-21.  SiYuan before v3.7.4 Plugin Overwrite via Bazaar Install
+21. SiYuan before v3.7.4 Plugin Overwrite via Bazaar Install
     https://www.cve.org/CVERecord?id=CVE-2026-62204
 
 22. Grav before 2.0.16 Information Disclosure via Twig Sandbox
@@ -88,7 +88,7 @@ https://www.cve.org/CVERecord?id=CVE-2026-73046
    https://www.cve.org/CVERecord?id=CVE-2026-72702
 
 25. Grav CMS before 2.0.16 Timing Attack via verifyNonce
-   https://www.cve.org/CVERecord?id=CVE-2026-72702
+   https://www.cve.org/CVERecord?id=CVE-2026-72703
 
 26. Grav before 3.9.1 Timing Attack via Non-Constant-Time Token Comparison
    https://www.cve.org/CVERecord?id=CVE-2026-72700
@@ -120,17 +120,16 @@ https://www.cve.org/CVERecord?id=CVE-2026-73046
 35. SSRF in cors-proxy-worker.js via DNS-based hostname allowlist bypass [CVE-2026-77581]
    https://github.com/alam00000/bentopdf/security/advisories/GHSA-5xjf-rr5x-pcfj#event-961386
 
-36.  Grav before 1.0.18 Authentication Bypass via Scoped API Ke
+36. Grav before 1.0.18 Authentication Bypass via Scoped API Key
     https://www.cve.org/CVERecord?id=CVE-2026-80203
 
 37. Grav before 1.0.18 Authentication Bypass via Scoped API Key
     https://www.cve.org/CVERecord?id=CVE-2026-80204
 
 
+## 📄 Public Security Advisories (70)
 
-## 📄 Public Security Advisories (63)
-
-### SiYuan (37)
+### SiYuan (43)
 
 1. HTTP Basic Auth path in `CheckAuth()` bypasses the workspace access‑code CAPTCHA/lockout, allowing unthrottled remote brute‑force of the admin credential.
    https://github.com/siyuan-note/siyuan/security/advisories/GHSA-w3xh-mmmh-r54v
@@ -262,148 +261,140 @@ https://www.cve.org/CVERecord?id=CVE-2026-73046
    https://github.com/siyuan-note/siyuan/security/advisories/GHSA-64gp-333q-mq6j#event-971501
 
 
-
-
-
 ### FileRise (2)
 
-38. Trailing‑dot filename bypasses `UploadNamePolicy` strict‑mode extension restrictions.
+44. Trailing‑dot filename bypasses `UploadNamePolicy` strict‑mode extension restrictions.
     https://github.com/error311/FileRise/security/advisories/GHSA-8vmq-qjrm-m5f2
 
-39. OnlyOffice callback silently skips JWT verification when the token is omitted.
+45. OnlyOffice callback silently skips JWT verification when the token is omitted.
     https://github.com/error311/FileRise/security/advisories/GHSA-wg9q-3w29-xv5q
-
 
 
 ### REDAXO (1)
 
-40. Mediapool: Unsanitized SVG uploads are publicly reachable, enabling Stored XSS.
+46. Mediapool: Unsanitized SVG uploads are publicly reachable, enabling Stored XSS.
     https://github.com/redaxo/core/security/advisories/GHSA-2p3g-jr7p-qwwx
-
 
 
 ### Grav CMS (19)
 
-41. Unauthenticated Path Traversal via missing directory‑boundary checks in `plugin-asset-map.php`.
+47. Unauthenticated Path Traversal via missing directory‑boundary checks in `plugin-asset-map.php`.
     https://github.com/getgrav/grav/security/advisories/GHSA-4v9q-p283-qc2m
 
-42. `onApiUserListRowAction` "unlock" handler does not check the target account's privilege level, letting an `api.users.write` account clear an admin.super account's lockout.
+48. `onApiUserListRowAction` "unlock" handler does not check the target account's privilege level, letting an `api.users.write` account clear an admin.super account's lockout.
     https://github.com/getgrav/grav/security/advisories/GHSA-985r-mpj8-5rqw#event-910316
 
-43. `media_directory()` Twig function allows filesystem path traversal and file content disclosure from sandboxed page content.
+49. `media_directory()` Twig function allows filesystem path traversal and file content disclosure from sandboxed page content.
     https://github.com/getgrav/grav/security/advisories/GHSA-47ch-6w46-6xm7
 
-44. `sendInvitationEmail()` is missing the untrusted‑Host‑header protection the other three security‑sensitive email links have, and `require_trusted_host` only enforces one of four flows.
+50. `sendInvitationEmail()` is missing the untrusted‑Host‑header protection the other three security‑sensitive email links have, and `require_trusted_host` only enforces one of four flows.
     https://github.com/getgrav/grav/security/advisories/GHSA-69vf-mjxw-x79j
 
-45. `Scheduler\Job::createLockFile()` follows symlinks in the world‑writable system temp directory (local symlink attack) [INFORMATIONAL].
+51. `Scheduler\Job::createLockFile()` follows symlinks in the world‑writable system temp directory (local symlink attack) [INFORMATIONAL].
     https://github.com/getgrav/grav/security/advisories/GHSA-q8w8-6cq5-j4h2
 
-46. [flex‑objects] shortcode bypasses Flex directory ACL entirely, exposing any registered collection to anyone with page‑edit access.
+52. [flex‑objects] shortcode bypasses Flex directory ACL entirely, exposing any registered collection to anyone with page‑edit access.
     https://github.com/getgrav/grav/security/advisories/GHSA-x929-528m-vx2m#event-910540
 
-47. Webhook delivery re‑resolves the target hostname after validating it, allowing the SSRF guard to be bypassed by DNS rebinding.
+53. Webhook delivery re‑resolves the target hostname after validating it, allowing the SSRF guard to be bypassed by DNS rebinding.
     https://github.com/getgrav/grav/security/advisories/GHSA-hq2v-cgw4-fw2w#event-910555
 
-48. `config_denied_paths` default list omits `system`, exposing real secrets (e.g., `system.cache.redis.password`) via the Twig sandbox when `config_access` is enabled.
+54. `config_denied_paths` default list omits `system`, exposing real secrets (e.g., `system.cache.redis.password`) via the Twig sandbox when `config_access` is enabled.
     https://github.com/getgrav/grav/security/advisories/GHSA-xjw5-q542-3vmr
 
-49. `UserInterface` offsetGet/offsetExists allow‑listed in Twig sandbox let editor‑authored content leak `hashed_password` and 2FA secrets via `offsetGet()`.
+55. `UserInterface` offsetGet/offsetExists allow‑listed in Twig sandbox let editor‑authored content leak `hashed_password` and 2FA secrets via `offsetGet()`.
     https://github.com/getgrav/grav/security/advisories/GHSA-3jhr-mxmx-38cx
 
-50. Origin validation bypass in `Uri::referrer()` and `Pages::referrerRoute()` via unanchored prefix match.
+56. Origin validation bypass in `Uri::referrer()` and `Pages::referrerRoute()` via unanchored prefix match.
     https://github.com/getgrav/grav/security/advisories/GHSA-9ccq-2jfg-qw33
 
-51. Non‑constant‑time nonce comparison in `Utils::verifyNonce()` used for CSRF protection.
+57. Non‑constant‑time nonce comparison in `Utils::verifyNonce()` used for CSRF protection.
     https://github.com/getgrav/grav/security/advisories/GHSA-38p6-h87p-r4cg
 
-52. Password reset and activation tokens compared with non‑constant‑time `===` instead of `hash_equals()`, and reset‑submission endpoint has no rate limiting.
+58. Password reset and activation tokens compared with non‑constant‑time `===` instead of `hash_equals()`, and reset‑submission endpoint has no rate limiting.
     https://github.com/getgrav/grav/security/advisories/GHSA-x239-6jqx-5hjh
 
-53. User registration discloses whether an email address is already registered (email enumeration).
+59. User registration discloses whether an email address is already registered (email enumeration).
     https://github.com/getgrav/grav/security/advisories/GHSA-crh8-xm27-j9g9
 
-54. The `system`, `site`, and `theme` Twig variables bypass the content sandbox entirely and are never covered by `config_denied_paths`.
+60. The `system`, `site`, and `theme` Twig variables bypass the content sandbox entirely and are never covered by `config_denied_paths`.
     https://github.com/getgrav/grav/security/advisories/GHSA-p597-crqc-m349
 
-55. Scoped API key can act on super-admin accounts across seven user-management endpoints
+61. Scoped API key can act on super-admin accounts across seven user-management endpoints
     https://github.com/getgrav/grav/security/advisories/GHSA-94q7-vrqr-cx5v
 
-56. Scoped API key can edit page permissions outside the scope it was granted
+62. Scoped API key can edit page permissions outside the scope it was granted
     https://github.com/getgrav/grav/security/advisories/GHSA-mcx6-4rvg-7r8v
 
-57. **gravCMS** — Unescaped `[lorem]` and `[details]` shortcode parameters allow stored XSS in Shortcode Core.
+63. **gravCMS** — Unescaped `[lorem]` and `[details]` shortcode parameters allow stored XSS in Shortcode Core.
   https://github.com/getgrav/grav/security/advisories/GHSA-hvm8-wx3f-j774
 
-58. **gravCMS** — Stored XSS via username/display name: `tHtml()` interpolates untrusted values into a template before markdown‑parsing it, and usernames are not restricted against HTML metacharacters.
+64. **gravCMS** — Stored XSS via username/display name: `tHtml()` interpolates untrusted values into a template before markdown‑parsing it, and usernames are not restricted against HTML metacharacters.
   https://github.com/getgrav/grav/security/advisories/GHSA-96xm-c5hr-59rx
 
-59. **gravCMS** — Unsanitized `marked.js` output injected via `{@html}` in MarkdownEditor and MarkdownModal, `javascript:` URI XSS, one path reachable via third‑party plugin/theme changelogs with no site access required.
+65. **gravCMS** — Unsanitized `marked.js` output injected via `{@html}` in MarkdownEditor and MarkdownModal, `javascript:` URI XSS, one path reachable via third‑party plugin/theme changelogs with no site access required.
   https://github.com/getgrav/grav/security/advisories/GHSA-752r-88j4-vxm3
 
 
 ### note-mark (2)
 
-60. Token exchange grant (RFC 8693) authenticates the caller based solely on whether their supplied `subject_token` is accepted by the OIDC provider's userinfo endpoint, with no check that the token was actually issued for note‑mark itself – allowing an access token obtained through any other client of the same identity provider to authenticate as that user here.
+66. Token exchange grant (RFC 8693) authenticates the caller based solely on whether their supplied `subject_token` is accepted by the OIDC provider's userinfo endpoint, with no check that the token was actually issued for note‑mark itself – allowing an access token obtained through any other client of the same identity provider to authenticate as that user here.
     https://github.com/enchant97/note-mark/security/advisories/GHSA-3j7j-3hq5-h3rp#event-910592
 
-61. No audience check during RFC 8693 token exchange.
+67. No audience check during RFC 8693 token exchange.
     https://github.com/enchant97/note-mark/security/advisories/GHSA-3j7j-3hq5-h3rp#event-917323
-
 
 
 ### PDFding (2)
 
-62. Path Traversal / Arbitrary File Write via Malicious Object Keys in Backup Restore (`recover_data`).
+68. Path Traversal / Arbitrary File Write via Malicious Object Keys in Backup Restore (`recover_data`).
     https://github.com/mrmn2/PdfDing/security/advisories/GHSA-jjv3-jrv3-8r2g
 
-63. Broken Access Control (IDOR) – PDF Upload Lets Any User Write Into Another User's Collection.
+69. Broken Access Control (IDOR) – PDF Upload Lets Any User Write Into Another User's Collection.
     https://github.com/mrmn2/PdfDing/security/advisories/GHSA-q4p5-xx8j-5xwc
 
-###BentoPDF
 
-64. BentoPDF — SSRF in `cors-proxy-worker.js` via DNS‑based hostname allowlist bypass.
+### BentoPDF (1)
+
+70. SSRF in `cors-proxy-worker.js` via DNS‑based hostname allowlist bypass.
   https://github.com/alam00000/bentopdf/security/advisories/GHSA-5xjf-rr5x-pcfj
 
 
-
-## ⏳ Submitted Reports Under Review
+## ⏳ Submitted Reports Under Review (11)
 
 The following vulnerabilities have been responsibly reported to the respective maintainers and are currently undergoing coordinated disclosure. These advisories are **not yet public** and are accessible only to repository maintainers and the reporter until publication.
 
-
-- **InvoicePlane** — Password reset token uses a non‑constant‑time comparison instead of `hash_equals()`.
+1. **InvoicePlane** — Password reset token uses a non‑constant‑time comparison instead of `hash_equals()`.
   https://github.com/InvoicePlane/InvoicePlane/security/advisories/GHSA-wcqc-qqv5-65ph
 
-- **InvoicePlane** — Guest invoice/quote access keys and CRON authentication key are generated using a non‑cryptographic PRNG.
+2. **InvoicePlane** — Guest invoice/quote access keys and CRON authentication key are generated using a non‑cryptographic PRNG.
   https://github.com/InvoicePlane/InvoicePlane/security/advisories/GHSA-chqc-v432-8pj8
 
-- **notesnook** — Unvalidated `releaseTrack` input and missing confirmation allow renderer‑controlled forced app relaunch and update‑channel corruption.
+3. **notesnook** — Unvalidated `releaseTrack` input and missing confirmation allow renderer‑controlled forced app relaunch and update‑channel corruption.
   https://github.com/streetwriters/notesnook/security/advisories/GHSA-jmvr-c9wq-x6vx
 
-- **notesnook** — Session‑wide permission request handler silently auto‑grants nearly all sensitive permissions (camera, microphone, clipboard, notifications) with no user prompt.
+4. **notesnook** — Session‑wide permission request handler silently auto‑grants nearly all sensitive permissions (camera, microphone, clipboard, notifications) with no user prompt.
   https://github.com/streetwriters/notesnook/security/advisories/GHSA-2w7p-6rr7-pqgv
 
-- **Outline** — Per‑IP Share‑Subscription Creation Limit Can Be Bypassed Indefinitely via the Stale‑Unconfirmed Resend Path.
+5. **Outline** — Per‑IP Share‑Subscription Creation Limit Can Be Bypassed Indefinitely via the Stale‑Unconfirmed Resend Path.
   https://github.com/outline/outline/security/advisories/GHSA-px83-2m6m-7frj
 
-
-- **fleet** - Enabling "Allow IdP-initiated SSO login" globally disables SAML InResponseTo replay protection for all logins, not just IdP-initiated ones
+6. **fleet** — Enabling "Allow IdP-initiated SSO login" globally disables SAML InResponseTo replay protection for all logins, not just IdP-initiated ones.
   https://github.com/fleetdm/fleet/security/advisories/GHSA-8rr8-84pc-6rpp#advisory-comment-271185
 
-- **Joplin** - Any website open in the browser can trigger and win Joplin's Web Clipper pairing dialog, stealing the permanent full-access API token, because the local server has no Origin/Referer restriction and the confirmation dialog shows no identifying information
+7. **Joplin** — Any website open in the browser can trigger and win Joplin's Web Clipper pairing dialog, stealing the permanent full-access API token, because the local server has no Origin/Referer restriction and the confirmation dialog shows no identifying information.
   https://github.com/laurent22/joplin/security/advisories/GHSA-9728-v7ww-mxjv
 
-- **Joplin** - Password reset accepts any valid per-user token including CSRF tokens and email-confirmation tokens because the token store has no purpose/type field, enabling full account takeover from a leaked CSRF token or a scanned confirmation-email link
+8. **Joplin** — Password reset accepts any valid per-user token including CSRF tokens and email-confirmation tokens because the token store has no purpose/type field, enabling full account takeover from a leaked CSRF token or a scanned confirmation-email link.
   https://github.com/laurent22/joplin/security/advisories/GHSA-8qm8-mp6h-qf35
 
-- **filebrowser** - Command WebSocket buffers unbounded messages before checking permissions
+9. **filebrowser** — Command WebSocket buffers unbounded messages before checking permissions.
   https://github.com/filebrowser/filebrowser/security/advisories/GHSA-39cx-23x9-5c8p
 
-- **FileRise** - Authenticated users could submit forms to unauthorized FileRise portals
+10. **FileRise** — Authenticated users could submit forms to unauthorized FileRise portals.
    https://github.com/error311/FileRise/security/advisories/GHSA-rqff-5vqx-7m8h
 
-- **FileRise** - FileRise Pro portal listing exposed other users' file metadata to read-own users
+11. **FileRise** — FileRise Pro portal listing exposed other users' file metadata to read-own users.
   https://github.com/error311/FileRise/security/advisories/GHSA-vxhj-g95m-45wx#advisory-comment-282109
 
 
@@ -415,8 +406,8 @@ This repository contains **only publicly available advisories and CVEs**. Vulner
 
 ### Statistics
 
-- **Public Advisories:** 63
-- **Assigned CVEs:** Updating soon
-- **Reports Under Review:** 9
+- **Public Advisories:** 70
+- **Assigned CVEs:** 37
+- **Reports Under Review:** 11
 
 *Last updated: August 2026*
