@@ -117,7 +117,8 @@ https://www.cve.org/CVERecord?id=CVE-2026-73046
 34. Grav Flex Objects 1.4.0 through 1.4.7 Authorization Bypass via Shortcode
    https://www.cve.org/CVERecord?id=CVE-2026-56707
 
-35. 
+35. SSRF in cors-proxy-worker.js via DNS-based hostname allowlist bypass [CVE-2026-77581]
+   https://github.com/alam00000/bentopdf/security/advisories/GHSA-5xjf-rr5x-pcfj#event-961386
 
 
 ## 📄 Public Security Advisories (63)
@@ -352,14 +353,17 @@ https://www.cve.org/CVERecord?id=CVE-2026-73046
 63. Broken Access Control (IDOR) – PDF Upload Lets Any User Write Into Another User's Collection.
     https://github.com/mrmn2/PdfDing/security/advisories/GHSA-q4p5-xx8j-5xwc
 
+###BentoPDF
+
+64. BentoPDF — SSRF in `cors-proxy-worker.js` via DNS‑based hostname allowlist bypass.
+  https://github.com/alam00000/bentopdf/security/advisories/GHSA-5xjf-rr5x-pcfj
+
 
 
 ## ⏳ Submitted Reports Under Review
 
 The following vulnerabilities have been responsibly reported to the respective maintainers and are currently undergoing coordinated disclosure. These advisories are **not yet public** and are accessible only to repository maintainers and the reporter until publication.
 
-- **BentoPDF** — SSRF in `cors-proxy-worker.js` via DNS‑based hostname allowlist bypass.
-  https://github.com/alam00000/bentopdf/security/advisories/GHSA-5xjf-rr5x-pcfj
 
 - **InvoicePlane** — Password reset token uses a non‑constant‑time comparison instead of `hash_equals()`.
   https://github.com/InvoicePlane/InvoicePlane/security/advisories/GHSA-wcqc-qqv5-65ph
@@ -386,6 +390,14 @@ The following vulnerabilities have been responsibly reported to the respective m
 - **Joplin** - Password reset accepts any valid per-user token including CSRF tokens and email-confirmation tokens because the token store has no purpose/type field, enabling full account takeover from a leaked CSRF token or a scanned confirmation-email link
   https://github.com/laurent22/joplin/security/advisories/GHSA-8qm8-mp6h-qf35
 
+- **filebrowser** - Command WebSocket buffers unbounded messages before checking permissions
+  https://github.com/filebrowser/filebrowser/security/advisories/GHSA-39cx-23x9-5c8p
+
+- **FileRise** - Authenticated users could submit forms to unauthorized FileRise portals
+   https://github.com/error311/FileRise/security/advisories/GHSA-rqff-5vqx-7m8h
+
+- **FileRise** - FileRise Pro portal listing exposed other users' file metadata to read-own users
+  https://github.com/error311/FileRise/security/advisories/GHSA-vxhj-g95m-45wx#advisory-comment-282109
 
 
 ## Responsible Disclosure
