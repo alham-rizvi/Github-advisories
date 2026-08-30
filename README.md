@@ -388,15 +388,14 @@ The following vulnerabilities have been responsibly reported to the respective m
 8. **Joplin** — Password reset accepts any valid per-user token including CSRF tokens and email-confirmation tokens because the token store has no purpose/type field, enabling full account takeover from a leaked CSRF token or a scanned confirmation-email link.
   https://github.com/laurent22/joplin/security/advisories/GHSA-8qm8-mp6h-qf35
 
-9. **filebrowser** — Command WebSocket buffers unbounded messages before checking permissions.
+9. **filebrowser** — Command WebSocket buffers unbounded messages before checking permissions. 
   https://github.com/filebrowser/filebrowser/security/advisories/GHSA-39cx-23x9-5c8p
 
-10. **FileRise** — Authenticated users could submit forms to unauthorized FileRise portals.
+10. **FileRise** — Authenticated users could submit forms to unauthorized FileRise portals. [Patched] 
    https://github.com/error311/FileRise/security/advisories/GHSA-rqff-5vqx-7m8h
 
-11. **FileRise** — FileRise Pro portal listing exposed other users' file metadata to read-own users.
+11. **FileRise** — FileRise Pro portal listing exposed other users' file metadata to read-own users. [patched]
   https://github.com/error311/FileRise/security/advisories/GHSA-vxhj-g95m-45wx#advisory-comment-282109
-
 
 ## Responsible Disclosure
 
