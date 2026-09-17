@@ -126,6 +126,52 @@ https://www.cve.org/CVERecord?id=CVE-2026-73046
 37. Grav before 1.0.18 Authentication Bypass via Scoped API Key
     https://www.cve.org/CVERecord?id=CVE-2026-80204
 
+38. 37. filebrowser through 2.63.23 WebSocket Message Size Limit Bypass
+    https://www.cve.org/CVERecord?id=CVE-2026-90927
+
+38. SiYuan before v3.8.2 Stored XSS in Search Asset Preview
+    https://www.cve.org/CVERecord?id=CVE-2026-87814
+
+39. SiYuan before v3.8.2 Private Attribute View Cell Value Disclosure
+    https://www.cve.org/CVERecord?id=CVE-2026-86192
+
+40. SiYuan before v3.8.2 Private Attribute View Key Enumeration
+    https://www.cve.org/CVERecord?id=CVE-2026-86191
+
+41. Grav Admin before 2.0.20 Stored XSS via Markdown Rendering
+    https://www.cve.org/CVERecord?id=CVE-2026-85601
+
+42. Grav Admin <= 2.0.19 Stored XSS in tHtml()
+    https://www.cve.org/CVERecord?id=CVE-2026-85600
+
+43. SiYuan before v3.8.2 Unbounded Resource Consumption via Request-Concurrency Middleware
+    https://www.cve.org/CVERecord?id=CVE-2026-85585
+
+44. SiYuan before v3.8.2 Unbounded Session Creation via Publish-Service Basic Auth
+    https://www.cve.org/CVERecord?id=CVE-2026-85582
+
+45. SiYuan v3.8.1 Information Disclosure via /api/transactions/undoState
+    https://www.cve.org/CVERecord?id=CVE-2026-85579
+
+46. SiYuan through v3.8.1 Authorization Bypass in /api/file/getFile
+    https://www.cve.org/CVERecord?id=CVE-2026-85578
+
+47. SiYuan before v3.8.1 Stored XSS via Block Name, Alias, and Memo Fields
+    https://www.cve.org/CVERecord?id=CVE-2026-82654
+
+48. SiYuan before v3.8.1 Stored XSS in confirmDialog()
+    https://www.cve.org/CVERecord?id=CVE-2026-82653
+
+49. SiYuan before v3.8.1 Invisible-Tier Content Disclosure in Publish Mode
+    https://www.cve.org/CVERecord?id=CVE-2026-82652
+
+50. SiYuan before v3.8.1 Path Traversal via /history/*path and /repo/diff/*path
+    https://www.cve.org/CVERecord?id=CVE-2026-82651
+
+51. SiYuan 3.8.0 Path Traversal / Sensitive File Exposure via RenderTemplate
+    https://www.cve.org/CVERecord?id=CVE-2026-82650
+
+
 
 ## 📄 Public Security Advisories (70)
 
