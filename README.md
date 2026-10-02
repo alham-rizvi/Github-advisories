@@ -443,6 +443,15 @@ The following vulnerabilities have been responsibly reported to the respective m
 11. **FileRise** — FileRise Pro portal listing exposed other users' file metadata to read-own users. [patched]
   https://github.com/error311/FileRise/security/advisories/GHSA-vxhj-g95m-45wx#advisory-comment-282109
 
+12. **Alpine Linux** - Integer overflow in apk_blob_pull_uint() causes incorrect version comparisons
+    https://gitlab.alpinelinux.org/alpine/apk-tools/-/work_items/11220
+    
+14. **Alpine Linux** - PAX extended header length truncated to unsigned int in tar.c handle_extended_header()
+  https://gitlab.alpinelinux.org/alpine/apk-tools/-/work_items/11220
+
+15. **wekan** - Private board attachments are served with "Cache-Control: public, max-age=31536000", so shared caches can store and re-serve them without authorization
+    https://github.com/wekan/wekan/security/advisories/GHSA-w3qg-pf27-g68r
+
 ## Responsible Disclosure
 
 I follow responsible disclosure practices and work directly with maintainers to ensure vulnerabilities are remediated before public disclosure.
