@@ -1,4 +1,4 @@
-# Public Archive of Security Research & Responsible Disclosures [Not updated]
+# Public Archive of Security Research & Responsible Disclosures
 
 Welcome to my public archive of security research and responsible disclosures.
 
