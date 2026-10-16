@@ -1,5 +1,22 @@
 # Public Archive of Security Research & Responsible Disclosures
 
+![Security Research](https://img.shields.io/badge/Security-Research-red?style=for-the-badge&logo=shield)
+![CVEs](https://img.shields.io/badge/CVEs-55-blue?style=for-the-badge&logo=cve)
+![Advisories](https://img.shields.io/badge/Advisories-90+-green?style=for-the-badge&logo=github)
+![Responsible Disclosure](https://img.shields.io/badge/Disclosure-Responsible-purple?style=for-the-badge&logo=handshake)
+
+
+## 📋 Quick Navigation
+
+| Section | Count | Jump |
+|---------|-------|------|
+| 🛡️ Assigned CVEs | 55 | [→ View](#️-assigned-cves-55) |
+| 📄 Public Security Advisories | 90+ | [→ View](#-public-security-advisories-90) |
+| 🏢 By Vendor | 20+ | [→ View](#-advisories-by-vendor) |
+| 📊 Statistics | — | [→ View](#-statistics) |
+
+
+
 Welcome to my public archive of security research and responsible disclosures.
 
 This repository contains:
