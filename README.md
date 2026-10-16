@@ -526,10 +526,10 @@ This repository contains:
 
 ### FileRise (2)
 
-87. Authenticated users could submit forms to unauthorized FileRise portals. [Patched]
+89. Authenticated users could submit forms to unauthorized FileRise portals. [Patched]
     https://github.com/error311/FileRise/security/advisories/GHSA-rqff-5vqx-7m8h
 
-88. FileRise Pro portal listing exposed other users' file metadata to read-own users. [Patched]
+90. FileRise Pro portal listing exposed other users' file metadata to read-own users. [Patched]
     https://github.com/error311/FileRise/security/advisories/GHSA-vxhj-g95m-45wx#advisory-comment-282109
 
 ## Responsible Disclosure
