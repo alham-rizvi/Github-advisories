@@ -5,15 +5,66 @@
 ![Advisories](https://img.shields.io/badge/Advisories-90+-green?style=for-the-badge&logo=github)
 ![Responsible Disclosure](https://img.shields.io/badge/Disclosure-Responsible-purple?style=for-the-badge&logo=handshake)
 
+## 📑 Table of Contents
 
-## 📋 Quick Navigation
+- [📊 Statistics](#-statistics)
+  - [Assigned CVEs by product](#assigned-cves-by-product)
+  - [Public advisories by vendor](#public-advisories-by-vendor)
+  - [Totals](#totals)
+- [ Assigned CVEs (52)](#️-assigned-cves-52)
+- [ Public Security Advisories (79)](#-public-security-advisories-79)
+- [Responsible Disclosure](#responsible-disclosure)
 
-| Section | Count | Jump |
-|---------|-------|------|
-| 🛡️ Assigned CVEs | 55 | [→ View](#️-assigned-cves-55) |
-| 📄 Public Security Advisories | 90+ | [→ View](#-public-security-advisories-90) |
-| 🏢 By Vendor | 20+ | [→ View](#-advisories-by-vendor) |
-| 📊 Statistics | — | [→ View](#-statistics) |
+---
+ 
+---
+ 
+## 📊 Statistics
+ 
+### Assigned CVEs by product
+ 
+```mermaid
+pie showData title Assigned CVEs by product (55)
+    "SiYuan" : 32
+    "Grav" : 18
+    "BentoPDF" : 2
+    "Joplin" : 2
+    "filebrowser" : 1
+```
+ 
+### Public advisories by vendor
+ 
+```mermaid
+pie showData title Public advisories by vendor
+    "SiYuan" : 43
+    "Grav CMS" : 19
+    "FileRise" : 5
+    "wekan" : 3
+    "REDAXO" : 2
+    "note-mark" : 2
+    "PDFding" : 2
+    "authlib" : 2
+    "Joplin" : 2
+    "InvoicePlane" : 2
+    "notesnook" : 2
+    "Alpine Linux" : 2
+    "BentoPDF" : 1
+    "ZoneMinder" : 1
+    "Outline" : 1
+    "fleet" : 1
+    "filebrowser" : 1
+```
+ 
+### Totals
+ 
+- **Public Advisories:** 91 listed entries
+- **Assigned CVEs:** 55
+*Last updated: Oct 2026*
+ 
+---
+ 
+<a id="️-assigned-cves-55"></a>
+
 
 
 
