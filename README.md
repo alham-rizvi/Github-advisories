@@ -172,6 +172,14 @@ This repository contains:
 52. SiYuan 3.8.0 Path Traversal / Sensitive File Exposure via `RenderTemplate`.
     https://www.cve.org/CVERecord?id=CVE-2026-82650
 
+53. BentoPDF SSRF in cors-proxy-worker.js via DNS-based hostname allowlist bypass[CVE-2026-77581]
+    https://github.com/alam00000/bentopdf/security/advisories/GHSA-5xjf-rr5x-pcfj
+
+54. CVE-2026-105783 - Origin Validation Error in laurent22 joplin
+    https://github.com/laurent22/joplin/security/advisories/GHSA-9728-v7ww-mxjv
+
+55. CVE-2026-105785 - Unverified Password Change in Joplin 
+    https://github.com/laurent22/joplin/security/advisories/GHSA-8qm8-mp6h-qf35
 ---
 
 ## 📄 Public Security Advisories (79)
